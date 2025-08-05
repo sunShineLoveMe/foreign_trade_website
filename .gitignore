@@ -1,0 +1,35 @@
+# 忽略 node_modules 依赖包
+node_modules/
+
+# 忽略构建产物
+dist/
+build/
+
+# 忽略系统或编辑器相关文件
+.DS_Store
+Thumbs.db
+
+# 忽略日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 忽略环境配置文件（如含密钥或 API）
+.env
+.env.local
+.env.*.local
+
+# 忽略 Vercel/Netlify 配置缓存（如有）
+.vercel/
+.netlify/
+
+# 忽略 IDE 编辑器目录
+.vscode/
+.idea/
+
+# macOS 临时文件
+*.swp
+
+# 包管理缓存
+.pnpm-store/
+.cache/
