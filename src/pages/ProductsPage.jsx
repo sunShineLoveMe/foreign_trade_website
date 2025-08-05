@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ImageWithLoading from '../components/ImageWithLoading';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import FooterBar from '../components/FooterBar';
 
 const ProductsPage = () => {
   const { t } = useTranslation();
@@ -297,6 +298,7 @@ const ProductsPage = () => {
           </div>
         </div>
       </section>
+      <FooterBar />
     </div>
   );
 };

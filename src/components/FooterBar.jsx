@@ -23,7 +23,7 @@ import {
           </div>
   
           {/* 中间：版权信息 */}
-          <div className="text-gray-500 text-sm text-center sm:text-left">
+          <div className="text-gray-500 text-base text-center sm:text-left">
             Copyright © 2025. YY Construction. All rights reserved.
           </div>
   

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import ImageWithLoading from '../components/ImageWithLoading';
 // import { Link } from 'react-router-dom';
 import AnimatedPage from '../components/AnimatedPage';
+import FooterBar from '../components/FooterBar';
 
 const HurricaneWindowsPage = () => {
   const { t } = useTranslation();
@@ -233,7 +234,7 @@ const HurricaneWindowsPage = () => {
             </div>
           </div>
         </section>
-        
+        <FooterBar />
       </div>
     </AnimatedPage>
   );

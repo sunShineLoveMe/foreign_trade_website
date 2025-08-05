@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import FooterBar from '../components/FooterBar';
 
 const ContactPage = () => {
   const { t } = useTranslation();
@@ -282,7 +283,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-
+      <FooterBar />           
       {/* Map Section */}
       {/* <section className="bg-gray-100 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import ImageWithLoading from '../components/ImageWithLoading';
 import { Link } from 'react-router-dom';
+import FooterBar from '../components/FooterBar';
 
 const AboutPage = () => {
   const { t } = useTranslation();
@@ -260,6 +261,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+      <FooterBar />
     </div>
   );
 };
