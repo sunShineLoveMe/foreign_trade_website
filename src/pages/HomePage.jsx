@@ -74,7 +74,7 @@ const HomePage = () => {
           <div 
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://source.unsplash.com/1920x1080/?modern-windows')"
+              backgroundImage: "url('/src/assets/home/bg-1.png')"
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-800/50 to-transparent"></div>
