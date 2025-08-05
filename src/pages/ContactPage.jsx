@@ -91,7 +91,7 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="pt-16 min-h-screen bg-gray-50">
+    <div className="pt-20 min-h-screen bg-gray-50">
       {/* Header */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -284,7 +284,7 @@ const ContactPage = () => {
       </div>
 
       {/* Map Section */}
-      <section className="bg-gray-100 py-12">
+      {/* <section className="bg-gray-100 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">Visit Our Showroom</h2>
@@ -300,7 +300,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

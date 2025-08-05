@@ -45,7 +45,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link 
               to="/" 
-              className={`text-2xl font-bold ${
+              className={`text-3xl font-bold ${
                 isScrolled ? 'text-slate-900' : 'text-black'
               }`}
             >
@@ -59,7 +59,7 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-200 ${
+                className={`px-4 py-2 text-lg font-medium rounded-md transition-all duration-200 ${
                   location.pathname === item.path
                     ? isScrolled
                       ? 'text-blue-600 bg-blue-50'
@@ -75,7 +75,7 @@ const Navbar = () => {
             
             <button
               onClick={toggleLanguage}
-              className={`ml-4 px-3 py-2 text-sm font-medium rounded-md transition-all duration-200 ${
+              className={`ml-4 px-3 py-2 text-lg font-medium rounded-md transition-all duration-200 ${
                 isScrolled
                   ? 'text-slate-600 hover:text-slate-900 bg-slate-100 hover:bg-slate-200'
                   : 'text-black bg-gray-100 hover:bg-gray-200'
@@ -89,7 +89,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleLanguage}
-              className={`mr-4 px-3 py-2 text-sm font-medium rounded-md ${
+              className={`mr-4 px-3 py-2 text-lg font-medium rounded-md ${
                 isScrolled
                   ? 'text-slate-600 bg-slate-100'
                   : 'text-black bg-gray-100'
@@ -130,7 +130,7 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`block px-3 py-2 text-base font-medium rounded-md transition-colors ${
+                className={`block px-3 py-2 text-lg font-medium rounded-md transition-colors ${
                   location.pathname === item.path
                     ? 'text-blue-600 bg-blue-50'
                     : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
