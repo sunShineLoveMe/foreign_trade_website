@@ -7,6 +7,7 @@ const resources = {
       nav: {
         home: 'Home',
         products: 'Products',
+        hurricane: 'Hurricane Windows',
         about: 'About Us',
         certificates: 'Certificates',
         contact: 'Contact Us',
@@ -53,6 +54,7 @@ const resources = {
       nav: {
         home: '首页',
         products: '产品',
+        hurricane: '飓风窗',
         about: '关于我们',
         certificates: '证书认证',
         contact: '联系我们',

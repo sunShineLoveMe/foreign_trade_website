@@ -6,6 +6,7 @@ import i18n from './i18n';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import ProductsPage from './pages/ProductsPage';
+import HurricaneWindowsPage from './pages/HurricaneWindowsPage';
 import AboutPage from './pages/AboutPage';
 import CertificatesPage from './pages/CertificatesPage';
 import ContactPage from './pages/ContactPage';
@@ -35,6 +36,11 @@ const AnimatedRoutes = () => {
         <Route path="/products" element={
           <AnimatedPage>
             <ProductsPage />
+          </AnimatedPage>
+        } />
+        <Route path="/hurricane" element={
+          <AnimatedPage>
+            <HurricaneWindowsPage />
           </AnimatedPage>
         } />
         <Route path="/about" element={

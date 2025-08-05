@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import ImageWithLoading from '../components/ImageWithLoading';
 
 const AboutPage = () => {
   const { t } = useTranslation();
@@ -9,31 +10,31 @@ const AboutPage = () => {
       year: '2005',
       title: 'Company Founded',
       description: 'Started with a vision to provide premium windows and doors to Australian homes',
-      image: 'https://source.unsplash.com/400x300/?factory',
+      image: 'https://picsum.photos/400/300?random=10',
     },
     {
       year: '2010',
       title: 'Expansion to Sydney',
       description: 'Opened our first interstate office and established our reputation for quality',
-      image: 'https://source.unsplash.com/400x300/?sydney',
+      image: 'https://picsum.photos/400/300?random=11',
     },
     {
       year: '2015',
       title: 'Technology Innovation',
       description: 'Introduced advanced manufacturing techniques and energy-efficient products',
-      image: 'https://source.unsplash.com/400x300/?technology',
+      image: 'https://picsum.photos/400/300?random=12',
     },
     {
       year: '2020',
       title: 'National Coverage',
       description: 'Expanded operations to serve all major Australian cities and regions',
-      image: 'https://source.unsplash.com/400x300/?australia',
+      image: 'https://picsum.photos/400/300?random=13',
     },
     {
       year: '2024',
       title: 'Industry Leader',
       description: 'Recognized as one of Australia\'s leading windows and doors manufacturers',
-      image: 'https://source.unsplash.com/400x300/?award',
+      image: 'https://picsum.photos/400/300?random=14',
     },
   ];
 
@@ -42,25 +43,25 @@ const AboutPage = () => {
       name: 'Michael Chen',
       position: 'Managing Director',
       expertise: '20+ years in window manufacturing and business development',
-      image: 'https://source.unsplash.com/300x300/?businessman',
+      image: 'https://picsum.photos/300/300?random=15',
     },
     {
       name: 'Sarah Johnson',
       position: 'Technical Director',
       expertise: 'Engineering excellence and product innovation specialist',
-      image: 'https://source.unsplash.com/300x300/?engineer-woman',
+      image: 'https://picsum.photos/300x300?random=16',
     },
     {
       name: 'James Wilson',
       position: 'Operations Manager',
       expertise: 'Quality control and manufacturing process optimization',
-      image: 'https://source.unsplash.com/300x300/?manager',
+      image: 'https://picsum.photos/300x300?random=17',
     },
     {
       name: 'Lisa Park',
       position: 'Customer Relations Manager',
       expertise: '10+ years ensuring customer satisfaction and service excellence',
-      image: 'https://source.unsplash.com/300x300/?professional-woman',
+      image: 'https://picsum.photos/300x300?random=18',
     },
   ];
 
@@ -223,8 +224,8 @@ const AboutPage = () => {
             </div>
             
             <div>
-              <img
-                src="https://source.unsplash.com/600x400/?company-values"
+              <ImageWithLoading
+                src="https://picsum.photos/600x400?random=23"
                 alt="Company Values"
                 className="w-full rounded-lg shadow-lg"
               />

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import ImageWithLoading from '../components/ImageWithLoading';
 
 const CertificatesPage = () => {
   const { t } = useTranslation();
@@ -23,7 +24,7 @@ const CertificatesPage = () => {
       issueDate: '2024-01-15',
       expiryDate: '2027-01-14',
       description: 'Quality management system certification demonstrating our commitment to consistent quality and continuous improvement in manufacturing processes.',
-      image: 'https://source.unsplash.com/600x400/?certificate',
+      image: 'https://picsum.photos/600x400?random=24',
       downloadUrl: '#',
     },
     {
@@ -34,7 +35,7 @@ const CertificatesPage = () => {
       issueDate: '2024-03-20',
       expiryDate: '2029-03-19',
       description: 'Compliance with Australian and New Zealand standards for windows and external glazed doors, ensuring safety, performance, and durability.',
-      image: 'https://source.unsplash.com/600x400/?standard',
+      image: 'https://picsum.photos/600x400?random=25',
       downloadUrl: '#',
     },
     {
@@ -45,7 +46,7 @@ const CertificatesPage = () => {
       issueDate: '2024-02-10',
       expiryDate: '2027-02-09',
       description: 'Green Star certification for sustainable building products, contributing to environmentally responsible construction.',
-      image: 'https://source.unsplash.com/600x400/?green-building',
+      image: 'https://picsum.photos/600x400?random=26',
       downloadUrl: '#',
     },
     {
@@ -56,7 +57,7 @@ const CertificatesPage = () => {
       issueDate: '2024-04-05',
       expiryDate: '2029-04-04',
       description: 'Certification for cyclone-resistant windows and doors, tested to withstand Category 5 cyclone conditions.',
-      image: 'https://source.unsplash.com/600x400/?cyclone-test',
+      image: 'https://picsum.photos/600x400?random=27',
       downloadUrl: '#',
     },
     {
@@ -67,7 +68,7 @@ const CertificatesPage = () => {
       issueDate: '2024-01-30',
       expiryDate: '2027-01-29',
       description: 'Energy efficiency ratings for windows and doors, helping customers achieve optimal thermal performance.',
-      image: 'https://source.unsplash.com/600x400/?energy-rating',
+      image: 'https://picsum.photos/600x400?random=28',
       downloadUrl: '#',
     },
     {
@@ -78,7 +79,7 @@ const CertificatesPage = () => {
       issueDate: '2024-05-15',
       expiryDate: '2029-05-14',
       description: 'Compliance with security screen door and window grille standards for enhanced home security.',
-      image: 'https://source.unsplash.com/600x400/?security-screen',
+      image: 'https://picsum.photos/600x400?random=29',
       downloadUrl: '#',
     },
     {
@@ -89,7 +90,7 @@ const CertificatesPage = () => {
       issueDate: '2024-03-10',
       expiryDate: '2029-03-09',
       description: 'BAL-40 certification for bushfire-prone areas, providing enhanced protection against ember attack.',
-      image: 'https://source.unsplash.com/600x400/?bushfire',
+      image: 'https://picsum.photos/600x400?random=30',
       downloadUrl: '#',
     },
     {
@@ -100,7 +101,7 @@ const CertificatesPage = () => {
       issueDate: '2024-06-01',
       expiryDate: '2027-05-31',
       description: 'Comprehensive environmental impact assessment of our products throughout their lifecycle.',
-      image: 'https://source.unsplash.com/600x400/?environmental',
+      image: 'https://picsum.photos/600x400?random=31',
       downloadUrl: '#',
     },
   ];
@@ -163,7 +164,7 @@ const CertificatesPage = () => {
               key={certificate.id}
               className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
             >
-              <img
+              <ImageWithLoading
                 src={certificate.image}
                 alt={certificate.name}
                 className="w-full h-48 object-cover"
@@ -247,7 +248,7 @@ const CertificatesPage = () => {
                 </button>
               </div>
 
-              <img
+              <ImageWithLoading
                 src={selectedCertificate.image}
                 alt={selectedCertificate.name}
                 className="w-full h-64 object-cover rounded-lg mb-6"
