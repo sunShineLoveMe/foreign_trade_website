@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ImageWithLoading from '../components/ImageWithLoading';
+import FooterBar from '../components/FooterBar';
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -261,6 +262,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <FooterBar />
     </div>
   );
 };
