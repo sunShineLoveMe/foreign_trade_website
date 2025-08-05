@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ImageWithLoading from '../components/ImageWithLoading';
+import { Link } from 'react-router-dom';
 
 const CertificatesPage = () => {
   const { t } = useTranslation();
@@ -304,6 +305,32 @@ const CertificatesPage = () => {
           </div>
         </div>
       )}
+      <section className="section-padding bg-gradient-to-r from-blue-600 to-blue-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-heading-xl font-bold text-white mb-4">
+              Ready to Transform Your Home?
+            </h2>
+            <p className="text-body-lg text-blue-100 mb-8">
+              Get a free consultation and quote for your window and door needs. Our experts are ready to help you choose the perfect solution.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/contact"
+                className="bg-white text-blue-600 px-8 py-4 text-lg font-semibold rounded-lg hover:bg-slate-50 transition-colors"
+              >
+                Get Free Quote
+              </Link>
+              <Link
+                to="/certificates"
+                className="border-2 border-white text-white px-8 py-4 text-lg font-semibold rounded-lg hover:bg-white/10 transition-colors"
+              >
+                View Certifications
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

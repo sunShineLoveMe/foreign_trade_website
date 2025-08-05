@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import ImageWithLoading from '../components/ImageWithLoading';
+// import { Link } from 'react-router-dom';
 import AnimatedPage from '../components/AnimatedPage';
 
 const HurricaneWindowsPage = () => {
@@ -232,6 +233,7 @@ const HurricaneWindowsPage = () => {
             </div>
           </div>
         </section>
+        
       </div>
     </AnimatedPage>
   );
