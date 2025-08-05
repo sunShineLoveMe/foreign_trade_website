@@ -65,7 +65,7 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="pt-20">
       {/* Hero Section - Styled like yywindow.com */}
       <section className="relative hero-section bg-gradient-to-br from-slate-50 via-white to-slate-100">
         {/* Background Image with Overlay */}
