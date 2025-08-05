@@ -1,6 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { I18nextProvider } from 'react-i18next';
+import { AnimatePresence } from 'framer-motion';
 import i18n from './i18n';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
@@ -8,6 +9,53 @@ import ProductsPage from './pages/ProductsPage';
 import AboutPage from './pages/AboutPage';
 import CertificatesPage from './pages/CertificatesPage';
 import ContactPage from './pages/ContactPage';
+import AnimatedPage from './components/AnimatedPage';
+
+const AnimatedRoutes = () => {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={
+          <AnimatedPage>
+            <HomePage />
+          </AnimatedPage>
+        } />
+        <Route path="/en" element={
+          <AnimatedPage>
+            <HomePage />
+          </AnimatedPage>
+        } />
+        <Route path="/cn" element={
+          <AnimatedPage>
+            <HomePage />
+          </AnimatedPage>
+        } />
+        <Route path="/products" element={
+          <AnimatedPage>
+            <ProductsPage />
+          </AnimatedPage>
+        } />
+        <Route path="/about" element={
+          <AnimatedPage>
+            <AboutPage />
+          </AnimatedPage>
+        } />
+        <Route path="/certificates" element={
+          <AnimatedPage>
+            <CertificatesPage />
+          </AnimatedPage>
+        } />
+        <Route path="/contact" element={
+          <AnimatedPage>
+            <ContactPage />
+          </AnimatedPage>
+        } />
+      </Routes>
+    </AnimatePresence>
+  );
+};
 
 function App() {
   return (
@@ -15,15 +63,7 @@ function App() {
       <Router>
         <div className="min-h-screen bg-gray-50">
           <Navbar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/en" element={<HomePage />} />
-            <Route path="/cn" element={<HomePage />} />
-            <Route path="/products" element={<ProductsPage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/certificates" element={<CertificatesPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-          </Routes>
+          <AnimatedRoutes />
         </div>
       </Router>
     </I18nextProvider>

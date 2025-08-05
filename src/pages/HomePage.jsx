@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import ImageWithLoading from '../components/ImageWithLoading';
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -34,36 +35,32 @@ const HomePage = () => {
       name: 'Premium Aluminum Sliding Windows',
       category: 'Windows',
       description: 'Double-glazed energy-efficient windows with advanced locking system',
-      price: 'From $899',
       features: ['Energy Efficient', 'Security Locks', 'Weather Resistant'],
-      image: 'https://source.unsplash.com/600x400/?window',
+      image: 'https://picsum.photos/600/400?random=1',
     },
     {
       id: 2,
       name: 'Security Screen Doors',
       category: 'Security',
       description: 'Heavy-duty security doors that don\'t compromise on style',
-      price: 'From $699',
       features: ['316 Marine Grade', 'Triple Lock System', 'Custom Colors'],
-      image: 'https://source.unsplash.com/600x400/?security-door',
+      image: 'https://picsum.photos/600/400?random=2',
     },
     {
       id: 3,
       name: 'Double Glazed Awning Windows',
       category: 'Windows',
       description: 'Perfect ventilation with superior insulation properties',
-      price: 'From $1,199',
       features: ['Tilt & Turn', 'Sound Insulation', 'Child Safety'],
-      image: 'https://source.unsplash.com/600x400/?awning-window',
+      image: 'https://picsum.photos/600/400?random=3',
     },
     {
       id: 4,
       name: 'French Patio Doors',
       category: 'Doors',
       description: 'Elegant French doors for seamless indoor-outdoor living',
-      price: 'From $1,899',
       features: ['Wide Opening', 'Security Glass', 'Multi-point Locking'],
-      image: 'https://source.unsplash.com/600x400/?french-door',
+      image: 'https://picsum.photos/600/400?random=4',
     },
   ];
 
@@ -176,7 +173,7 @@ const HomePage = () => {
                 className="card-modern overflow-hidden group"
               >
                 <div className="relative overflow-hidden">
-                  <img
+                  <ImageWithLoading
                     src={product.image}
                     alt={product.name}
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -207,10 +204,7 @@ const HomePage = () => {
                     ))}
                   </div>
                   
-                  <div className="flex justify-between items-center">
-                    <span className="text-xl font-bold text-blue-600">
-                      {product.price}
-                    </span>
+                  <div className="flex justify-end items-center">
                     <Link
                       to="/products"
                       className="text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center"

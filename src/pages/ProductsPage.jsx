@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ImageWithLoading from '../components/ImageWithLoading';
 import { useTranslation } from 'react-i18next';
 
 const ProductsPage = () => {
@@ -20,10 +21,9 @@ const ProductsPage = () => {
       name: 'Premium Aluminum Sliding Windows',
       category: 'windows',
       description: 'Double-glazed energy-efficient windows with advanced locking system',
-      price: 'From $899',
       features: ['Energy Efficient', 'Security Locks', 'Weather Resistant'],
       specs: { width: '600-2400mm', height: '600-1800mm', glass: '6.38mm Laminated' },
-      image: 'https://source.unsplash.com/600x400/?sliding-window',
+      image: 'https://picsum.photos/600/400?random=1',
       badge: 'Best Seller',
     },
     {
@@ -31,10 +31,9 @@ const ProductsPage = () => {
       name: 'Security Screen Doors',
       category: 'doors',
       description: 'Heavy-duty security doors that don\'t compromise on style',
-      price: 'From $699',
       features: ['316 Marine Grade', 'Triple Lock System', 'Custom Colors'],
       specs: { width: '800-1200mm', height: '2000-2400mm', mesh: '316 Stainless Steel' },
-      image: 'https://source.unsplash.com/600x400/?security-door',
+      image: 'https://picsum.photos/600/400?random=2',
       badge: 'Popular',
     },
     {
@@ -42,20 +41,18 @@ const ProductsPage = () => {
       name: 'Double Glazed Awning Windows',
       category: 'windows',
       description: 'Perfect ventilation with superior insulation properties',
-      price: 'From $1,199',
       features: ['Tilt & Turn', 'Sound Insulation', 'Child Safety'],
       specs: { width: '400-1200mm', height: '400-1200mm', uValue: '1.4 W/m²K' },
-      image: 'https://source.unsplash.com/600x400/?awning-window',
+      image: 'https://picsum.photos/600/400?random=3',
     },
     {
       id: 4,
       name: 'French Patio Doors',
       category: 'doors',
       description: 'Elegant French doors for seamless indoor-outdoor living',
-      price: 'From $1,899',
       features: ['Wide Opening', 'Security Glass', 'Multi-point Locking'],
       specs: { width: '1200-2400mm', height: '2000-2400mm', panels: '2-4 Panels' },
-      image: 'https://source.unsplash.com/600x400/?french-door',
+      image: 'https://picsum.photos/600/400?random=4',
       badge: 'Premium',
     },
     {
@@ -63,40 +60,36 @@ const ProductsPage = () => {
       name: 'Hurricane Impact Windows',
       category: 'security',
       description: 'Engineered to withstand extreme weather conditions',
-      price: 'From $2,299',
       features: ['Impact Resistant', 'UV Protection', 'Insurance Discount'],
       specs: { rating: 'Category 5', glass: 'Laminated Impact', certification: 'AS/NZS 2047' },
-      image: 'https://source.unsplash.com/600x400/?hurricane-window',
+      image: 'https://picsum.photos/600/400?random=5',
     },
     {
       id: 6,
       name: 'Custom Bay Window Solutions',
       category: 'custom',
       description: 'Architectural masterpieces tailored to your specifications',
-      price: 'From $3,599',
       features: ['Custom Design', 'Premium Materials', 'Expert Installation'],
       specs: { design: 'Custom', materials: 'Aluminum/Timber', warranty: '25 Years' },
-      image: 'https://source.unsplash.com/600x400/?bay-window',
+      image: 'https://picsum.photos/600/400?random=6',
     },
     {
       id: 7,
       name: 'Bi-fold Door Systems',
       category: 'doors',
       description: 'Transform your space with seamless folding door systems',
-      price: 'From $2,999',
       features: ['Smooth Operation', 'Weather Sealing', 'Space Saving'],
       specs: { panels: '2-7 Panels', width: '1800-6000mm', threshold: 'Low Profile' },
-      image: 'https://source.unsplash.com/600x400/?bifold-door',
+      image: 'https://picsum.photos/600/400?random=7',
     },
     {
       id: 8,
       name: 'Soundproof Windows',
       category: 'windows',
       description: 'Ultimate noise reduction for peaceful living',
-      price: 'From $1,599',
       features: ['STC 45+ Rating', 'Laminated Glass', 'Professional Installation'],
       specs: { rating: 'STC 45+', reduction: 'Up to 45dB', glass: 'Triple Glazed' },
-      image: 'https://source.unsplash.com/600x400/?soundproof-window',
+      image: 'https://picsum.photos/600/400?random=8',
     },
   ];
 
@@ -188,7 +181,7 @@ const ProductsPage = () => {
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               <div className="relative">
-                <img
+                <ImageWithLoading
                   src={product.image}
                   alt={product.name}
                   className="w-full h-56 object-cover"
@@ -230,10 +223,8 @@ const ProductsPage = () => {
                 
                 <div className="border-t border-slate-100 pt-4"
                   >
-                    <div className="flex justify-between items-center mb-4"
+                    <div className="flex justify-end items-center mb-4"
                       >
-                        <span className="text-xl font-bold text-blue-600"
-                          >{product.price}</span>
                         <button className="text-blue-600 hover:text-blue-800 font-medium text-sm"
                           >View Details</button>
                       </div>
