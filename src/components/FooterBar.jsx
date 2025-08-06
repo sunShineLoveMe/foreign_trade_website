@@ -11,20 +11,20 @@ import {
       <footer className="bg-white shadow-inner px-6 py-6 sm:py-8">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-0">
           {/* 左侧：Logo */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             <img
-              src="https://picsum.photos/80"
-              alt="YY Windows Logo"
-              className="w-10 h-10 rounded object-cover"
+              src="src/assets/footer/logo.png"
+              alt="SUPERBUILD Logo"
+              className="w-16 h-16 rounded object-cover shadow-md"
             />
-            <span className="text-lg font-semibold text-blue-900">
-              YY WINDOWS
+            <span className="text-2xl font-bold text-blue-900">
+              SUPERBUILD
             </span>
           </div>
   
           {/* 中间：版权信息 */}
           <div className="text-gray-500 text-base text-center sm:text-left">
-            Copyright © 2025. YY Construction. All rights reserved.
+            Copyright © 2025. SUPERBUILD. All rights reserved.
           </div>
   
           {/* 右侧：社交图标 */}
