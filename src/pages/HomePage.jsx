@@ -10,12 +10,12 @@ const HomePage = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const heroImages = [
-    'src/assets/home/bg-1.png',
-    'src/assets/home/bg-2.png',
-    'src/assets/home/bg-3.png',
-    'src/assets/home/bg-4.png',
-    'src/assets/home/bg-5.png',
-    'src/assets/home/bg-6.png'
+    '/assets/home/bg-1.png',
+    '/assets/home/bg-2.png',
+    '/assets/home/bg-3.png',
+    '/assets/home/bg-4.png',
+    '/assets/home/bg-5.png',
+    '/assets/home/bg-6.png'
   ];
 
   const handleImageChange = () => {

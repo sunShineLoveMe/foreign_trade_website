@@ -43,7 +43,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img
-              src="src/assets/footer/logo.png"
+              src="/assets/footer/logo.png"
               alt="SUPERBUILD Logo"
               className="w-16 h-16 object-cover"
             />
