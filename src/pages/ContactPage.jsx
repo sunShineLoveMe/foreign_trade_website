@@ -38,7 +38,7 @@ const ContactPage = () => {
 
     try {
       // TODO: Replace with actual Formspree endpoint
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/myzpnlog', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -76,13 +76,13 @@ const ContactPage = () => {
       icon: '📞',
       title: 'Phone',
       content: '+61 2 9000 0000',
-      href: 'tel:+61290000000',
+      // href: 'tel:+61290000000',
     },
     {
       icon: '✉️',
       title: 'Email',
-      content: 'info@windowsdoors.com.au',
-      href: 'mailto:info@windowsdoors.com.au',
+      content: 'ibuildhouse7@gmail.com',
+      // href: 'ibuildhouse7@gmail.com',
     },
     {
       icon: '🕒',
@@ -129,7 +129,7 @@ const ContactPage = () => {
             </div>
 
             {/* Social Media */}
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <h3 className="font-semibold text-gray-900 mb-4">Follow Us</h3>
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-400 hover:text-gray-600">
@@ -148,7 +148,7 @@ const ContactPage = () => {
                   </svg>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}
