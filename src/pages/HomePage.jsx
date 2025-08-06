@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ImageWithLoading from '../components/ImageWithLoading';
@@ -6,6 +6,24 @@ import FooterBar from '../components/FooterBar';
 
 const HomePage = () => {
   const { t } = useTranslation();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const heroImages = [
+    'src/assets/home/bg-1.png',
+    'src/assets/home/bg-2.png'
+  ];
+
+  const handleImageChange = () => {
+    if (isTransitioning) return;
+    
+    setIsTransitioning(true);
+    
+    setTimeout(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+      setIsTransitioning(false);
+    }, 700);
+  };
 
   const brandValues = [
     {
@@ -72,12 +90,16 @@ const HomePage = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <div 
-            className="absolute inset-0 bg-cover bg-center"
+            className={`absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out ${
+              isTransitioning ? 'opacity-0 scale-105 rotate-3' : 'opacity-100 scale-100 rotate-0'
+            }`}
             style={{
-              backgroundImage: "url('/src/assets/home/bg-1.png')"
+              backgroundImage: `url('${heroImages[currentImageIndex]}')`
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-800/50 to-transparent"></div>
+          <div className={`absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-800/50 to-transparent transition-opacity duration-700 ${
+            isTransitioning ? 'opacity-0' : 'opacity-100'
+          }`}></div>
         </div>
         
         {/* Hero Content */}
@@ -115,12 +137,17 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
+        {/* Scroll Indicator - Click to change background */}
+        <button
+          onClick={handleImageChange}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer hover:scale-110 transition-transform z-20"
+          title="Click to change background"
+          style={{ WebkitTapHighlightColor: 'transparent' }}
+        >
+          <div className="w-8 h-12 border-2 border-white/50 rounded-full flex justify-center items-center bg-white/10 backdrop-blur-sm">
+            <div className="w-2 h-4 bg-white/70 rounded-full animate-pulse"></div>
           </div>
-        </div>
+        </button>
       </section>
 
       {/* Brand Values Section - Professional Grid */}
