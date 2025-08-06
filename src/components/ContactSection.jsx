@@ -153,7 +153,7 @@ const ContactSection = ({
                 </div>
 
                 {/* Social Media */}
-                <div className="pt-6 border-t border-gray-200">
+                {/* <div className="pt-6 border-t border-gray-200">
                   <h4 className="text-lg font-semibold text-gray-900 mb-4">Follow Us</h4>
                   <div className="flex space-x-4">
                     {contactInfo.socialMedia.map((social) => (
@@ -167,7 +167,7 @@ const ContactSection = ({
                       </a>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

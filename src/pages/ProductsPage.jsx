@@ -9,11 +9,9 @@ const ProductsPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   const categories = [
-    { id: 'all', name: 'All Products', count: 8 },
+    { id: 'all', name: 'All Products', count: 6 },
     { id: 'windows', name: 'Windows', count: 4 },
     { id: 'doors', name: 'Doors', count: 2 },
-    { id: 'security', name: 'Security', count: 1 },
-    { id: 'custom', name: 'Custom Solutions', count: 1 },
   ];
 
   const products = [
@@ -58,39 +56,21 @@ const ProductsPage = () => {
     },
     {
       id: 5,
-      name: 'Hurricane Impact Windows',
-      category: 'security',
-      description: 'Engineered to withstand extreme weather conditions',
-      features: ['Impact Resistant', 'UV Protection', 'Insurance Discount'],
-      specs: { rating: 'Category 5', glass: 'Laminated Impact', certification: 'AS/NZS 2047' },
-      image: 'https://picsum.photos/600/400?random=5',
-    },
-    {
-      id: 6,
-      name: 'Custom Bay Window Solutions',
-      category: 'custom',
-      description: 'Architectural masterpieces tailored to your specifications',
-      features: ['Custom Design', 'Premium Materials', 'Expert Installation'],
-      specs: { design: 'Custom', materials: 'Aluminum/Timber', warranty: '25 Years' },
-      image: 'https://picsum.photos/600/400?random=6',
-    },
-    {
-      id: 7,
       name: 'Bi-fold Door Systems',
       category: 'doors',
       description: 'Transform your space with seamless folding door systems',
       features: ['Smooth Operation', 'Weather Sealing', 'Space Saving'],
       specs: { panels: '2-7 Panels', width: '1800-6000mm', threshold: 'Low Profile' },
-      image: 'https://picsum.photos/600/400?random=7',
+      image: 'https://picsum.photos/600/400?random=5',
     },
     {
-      id: 8,
+      id: 6,
       name: 'Soundproof Windows',
       category: 'windows',
       description: 'Ultimate noise reduction for peaceful living',
       features: ['STC 45+ Rating', 'Laminated Glass', 'Professional Installation'],
       specs: { rating: 'STC 45+', reduction: 'Up to 45dB', glass: 'Triple Glazed' },
-      image: 'https://picsum.photos/600/400?random=8',
+      image: 'https://picsum.photos/600/400?random=6',
     },
   ];
 
@@ -298,10 +278,10 @@ const ProductsPage = () => {
         </div>
       </section>
       
-      <ContactSection 
+      {/* <ContactSection 
         title="Get Your Free Quote"
         subtitle="Ready to upgrade your windows and doors? Our experts will provide a detailed consultation and custom quote for your project."
-      />
+      /> */}
       
       <FooterBar />
     </div>
