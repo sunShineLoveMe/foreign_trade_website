@@ -38,7 +38,7 @@ const ContactPage = () => {
 
     try {
       // TODO: Replace with actual Formspree endpoint
-      const response = await fetch('https://formspree.io/f/myzpnlog', {
+      const response = await fetch('https://formspree.io/f/xgvzndlw', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
