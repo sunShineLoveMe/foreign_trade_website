@@ -38,11 +38,6 @@ const AnimatedRoutes = () => {
             <ProductsPage />
           </AnimatedPage>
         } />
-        <Route path="/hurricane" element={
-          <AnimatedPage>
-            <HurricaneWindowsPage />
-          </AnimatedPage>
-        } />
         <Route path="/about" element={
           <AnimatedPage>
             <AboutPage />
