@@ -29,6 +29,17 @@ const HomePage = () => {
     }, 700);
   };
 
+  // Auto carousel every 4 seconds
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      if (!isTransitioning) {
+        handleImageChange();
+      }
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isTransitioning, heroImages.length]);
+
   const brandValues = [
     {
       icon: '🏆',

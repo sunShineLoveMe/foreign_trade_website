@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import ImageWithLoading from '../components/ImageWithLoading';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import FooterBar from '../components/FooterBar';
+import ContactSection from '../components/ContactSection';
 
 const ProductsPage = () => {
-  const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -298,6 +297,12 @@ const ProductsPage = () => {
           </div>
         </div>
       </section>
+      
+      <ContactSection 
+        title="Get Your Free Quote"
+        subtitle="Ready to upgrade your windows and doors? Our experts will provide a detailed consultation and custom quote for your project."
+      />
+      
       <FooterBar />
     </div>
   );
