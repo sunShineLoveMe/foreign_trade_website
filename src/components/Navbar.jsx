@@ -42,14 +42,20 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-3">
+            <img
+              src="src/assets/footer/logo.png"
+              alt="SUPERBUILD Logo"
+              className="w-16 h-16 object-cover"
+            />
             <Link 
               to="/" 
-              className={`text-3xl font-bold ${
+              className={`text-2xl font-bold flex flex-col ${
                 isScrolled ? 'text-slate-900' : 'text-black'
               }`}
             >
-              Windows & Doors
+              <span className="text-base font-medium">SUPERBUILD</span>
+              {/* <span className="text-sm opacity-75">Windows & Doors</span> */}
             </Link>
           </div>
 

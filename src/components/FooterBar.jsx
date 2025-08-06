@@ -15,7 +15,7 @@ import {
             <img
               src="src/assets/footer/logo.png"
               alt="SUPERBUILD Logo"
-              className="w-16 h-16 rounded object-cover shadow-md"
+              className="w-16 h-16 object-cover"
             />
             <span className="text-2xl font-bold text-blue-900">
               SUPERBUILD
