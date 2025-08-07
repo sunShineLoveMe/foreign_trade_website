@@ -31,7 +31,7 @@ const ProductsPage = () => {
         height: 'Custom',
         glass: '5-20mm Toughened / Laminated / Low-e'
       },
-      image: 'https://picsum.photos/600/400?random=7',
+      image: '/assets/products/sliding-window.png',
       badge: 'Durable'
     },
     {
@@ -45,7 +45,7 @@ const ProductsPage = () => {
         height: 'Custom',
         glass: '5-20mm Low-E / Soundproof / Laminated'
       },
-      image: 'https://picsum.photos/600/400?random=8',
+      image: '/assets/products/awning-window.png',
       badge: 'Energy Star'
     },
     {
@@ -59,7 +59,7 @@ const ProductsPage = () => {
         height: 'Custom',
         glass: '5-20mm Low-E / Triple Glazed'
       },
-      image: 'https://picsum.photos/600/400?random=9',
+      image: '/assets/products/fixed-window.png',
       badge: 'Panoramic'
     },
     {
@@ -73,7 +73,7 @@ const ProductsPage = () => {
         height: 'Custom',
         glass: '5-20mm Low-E / Frosted / Tinted'
       },
-      image: 'https://picsum.photos/600/400?random=10',
+      image: '/assets/products/glass-louvre-window.png',
       badge: 'Breezy'
     },
     {
@@ -87,7 +87,7 @@ const ProductsPage = () => {
         height: 'Custom',
         panels: '3-6 Panels'
       },
-      image: 'https://picsum.photos/600/400?random=11',
+      image: '/assets/products/stacker-door.png',
       badge: 'Expansive'
     },
     {
@@ -101,7 +101,7 @@ const ProductsPage = () => {
         height: 'Custom',
         glass: '5-20mm Low-E / Soundproof / Laminated'
       },
-      image: 'https://picsum.photos/600/400?random=12',
+      image: '/assets/products/sliding-door.png',
       badge: 'Classic'
     },
     {
@@ -115,7 +115,7 @@ const ProductsPage = () => {
         height: '2000-2400mm',
         panels: '1-2 Panels'
       },
-      image: 'https://picsum.photos/600/400?random=13',
+      image: '/assets/products/hinged-door.png',
       badge: 'Elegant'
     },
     {
@@ -129,7 +129,7 @@ const ProductsPage = () => {
         panels: '2-7 Panels',
         threshold: 'Low Profile'
       },
-      image: 'https://picsum.photos/600/400?random=14',
+      image: '/assets/products/bi-folding-door.png',
       badge: 'Space Saver'
     }
   ]
