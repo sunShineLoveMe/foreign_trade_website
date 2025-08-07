@@ -348,6 +348,103 @@ const ProductDetailPage = () => {
                       </div>
                     </div>
 
+                    {/* Product Showcase - Alternating Image-Text Layout */}
+                    <div className="mb-8">
+                      <h2 className="text-xl font-bold text-slate-900 mb-6">Product Showcase</h2>
+                      
+                      {/* Row 1: Left Image, Right Text */}
+                      <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-8 items-center">
+                        <div className="lg:col-span-6">
+                          <img
+                            src="https://picsum.photos/600/400?random=101"
+                            alt="Product Feature 1 - Premium Construction"
+                            className="w-full h-64 object-cover rounded-lg shadow-md"
+                          />
+                        </div>
+                        <div className="lg:col-span-4">
+                          <h3 className="text-lg font-semibold text-slate-900 mb-2">Premium Construction Quality</h3>
+                          <p className="text-slate-600 mb-3">
+                            High-grade aluminum frame construction ensures durability and longevity. 
+                            Precision engineering provides smooth operation and perfect sealing.
+                          </p>
+                          <ul className="text-sm text-slate-600 space-y-1">
+                            <li>• Reinforced aluminum profiles</li>
+                            <li>• Weather-resistant finish</li>
+                            <li>• Precision manufacturing</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      {/* Row 2: Left Text, Right Image */}
+                      <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-8 items-center">
+                        <div className="lg:col-span-4 lg:order-1">
+                          <h3 className="text-lg font-semibold text-slate-900 mb-2">Advanced Safety Features</h3>
+                          <p className="text-slate-600 mb-3">
+                            Multi-point locking system with high-security components. 
+                            Child-safe design with emergency release mechanisms.
+                          </p>
+                          <ul className="text-sm text-slate-600 space-y-1">
+                            <li>• Multi-point security locks</li>
+                            <li>• Child safety mechanisms</li>
+                            <li>• Emergency release options</li>
+                          </ul>
+                        </div>
+                        <div className="lg:col-span-6 lg:order-2">
+                          <img
+                            src="https://picsum.photos/600/400?random=102"
+                            alt="Product Feature 2 - Safety Features"
+                            className="w-full h-64 object-cover rounded-lg shadow-md"
+                          />
+                        </div>
+                      </div>
+
+                      {/* Row 3: Left Image, Right Text */}
+                      <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-8 items-center">
+                        <div className="lg:col-span-6">
+                          <img
+                            src="https://picsum.photos/600/400?random=103"
+                            alt="Product Feature 3 - Energy Efficiency"
+                            className="w-full h-64 object-cover rounded-lg shadow-md"
+                          />
+                        </div>
+                        <div className="lg:col-span-4">
+                          <h3 className="text-lg font-semibold text-slate-900 mb-2">Energy Efficient Design</h3>
+                          <p className="text-slate-600 mb-3">
+                            Double or triple glazing options with thermal break technology. 
+                            Reduces energy costs and maintains comfortable indoor temperatures.
+                          </p>
+                          <ul className="text-sm text-slate-600 space-y-1">
+                            <li>• Thermal break technology</li>
+                            <li>• Double/triple glazing</li>
+                            <li>• Energy cost reduction</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      {/* Row 4: Left Text, Right Image */}
+                      <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 items-center">
+                        <div className="lg:col-span-4 lg:order-1">
+                          <h3 className="text-lg font-semibold text-slate-900 mb-2">Customizable Options</h3>
+                          <p className="text-slate-600 mb-3">
+                            Wide range of colors, finishes, and hardware options. 
+                            Custom sizes available to fit any architectural requirement.
+                          </p>
+                          <ul className="text-sm text-slate-600 space-y-1">
+                            <li>• Multiple color options</li>
+                            <li>• Custom sizing available</li>
+                            <li>• Various hardware choices</li>
+                          </ul>
+                        </div>
+                        <div className="lg:col-span-6 lg:order-2">
+                          <img
+                            src="https://picsum.photos/600/400?random=104"
+                            alt="Product Feature 4 - Custom Options"
+                            className="w-full h-64 object-cover rounded-lg shadow-md"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
                     {/* Specifications */}
                     <div className="mb-8">
                       <h2 className="text-xl font-bold text-slate-900 mb-4">Technical Specifications</h2>
@@ -377,16 +474,13 @@ const ProductDetailPage = () => {
                     </div>
 
                     {/* CTA */}
-                    <div className="flex gap-4">
+                    <div className="w-full">
                       <Link
                         to="/contact"
-                        className="flex-1 bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold text-center hover:bg-blue-700 transition-colors"
+                        className="w-full block bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold text-center hover:bg-blue-700 transition-colors"
                       >
                         Get Quote
                       </Link>
-                      <button className="flex-1 border border-blue-600 text-blue-600 py-3 px-6 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-                        Download Brochure
-                      </button>
                     </div>
                   </div>
                 </motion.div>
