@@ -8,16 +8,16 @@ import {
   
   export default function FooterBar() {
     return (
-      <footer className="bg-white shadow-inner px-6 py-6 sm:py-8">
+      <footer className="bg-white shadow-inner px-6 py-4 sm:py-5">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-0">
           {/* 左侧：Logo */}
           <div className="flex items-center gap-4">
             <img
               src="/assets/footer/logo.png"
               alt="SUPERBUILD Logo"
-              className="w-16 h-16 object-cover"
+              className="w-12 h-12 object-cover"
             />
-            <span className="text-2xl font-bold text-blue-900">
+            <span className="text-xl font-bold text-blue-900">
               SUPERBUILD
             </span>
           </div>
@@ -28,7 +28,7 @@ import {
           </div>
   
           {/* 右侧：社交图标 */}
-          <div className="flex gap-4 text-gray-600 text-xl">
+          <div className="flex gap-4 text-gray-600 text-lg">
             <a href="#" aria-label="Facebook" className="hover:opacity-75">
               <FaFacebookF />
             </a>
