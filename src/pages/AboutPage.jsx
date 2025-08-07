@@ -12,31 +12,31 @@ const AboutPage = () => {
       year: '2005',
       title: 'Company Founded',
       description: 'Started with a vision to provide premium windows and doors to Australian homes',
-      image: 'https://picsum.photos/400/300?random=10',
+      image: '/assets/development/develop-1.png',
     },
     {
       year: '2010',
       title: 'Expansion to Sydney',
       description: 'Opened our first interstate office and established our reputation for quality',
-      image: 'https://picsum.photos/400/300?random=11',
+      image: '/assets/development/develop-2.png',
     },
     {
       year: '2015',
       title: 'Technology Innovation',
       description: 'Introduced advanced manufacturing techniques and energy-efficient products',
-      image: 'https://picsum.photos/400/300?random=12',
+      image: '/assets/development/develop-3.png',
     },
     {
       year: '2020',
       title: 'National Coverage',
       description: 'Expanded operations to serve all major Australian cities and regions',
-      image: 'https://picsum.photos/400/300?random=13',
+      image: '/assets/development/develop-4.png',
     },
     {
       year: '2025',
       title: 'Industry Leader',
       description: 'Recognized as one of Australia\'s leading windows and doors manufacturers',
-      image: 'https://picsum.photos/400/300?random=14',
+      image: '/assets/development/develop-5.png',
     },
   ];
 
