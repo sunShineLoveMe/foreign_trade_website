@@ -16,62 +16,117 @@ const ProductsPage = () => {
   const products = [
     {
       id: 1,
-      name: 'Premium Aluminum Sliding Windows',
+      name: 'Sliding Window',
       category: 'windows',
-      description: 'Double-glazed energy-efficient windows with advanced locking system',
-      features: ['Energy Efficient', 'Security Locks', 'Weather Resistant'],
-      specs: { width: '600-2400mm', height: '600-1800mm', glass: '6.38mm Laminated' },
-      image: 'https://picsum.photos/600/400?random=1',
-      badge: 'Best Seller',
+      description: 'Space-saving and weather-tight windows perfect for luxury homes and commercial use.',
+      features: ['Thermal or Non-Thermal Break Options', 'Low-E Double/Triple Glazing', 'Multi-Point Locking System'],
+      specs: {
+        width: 'Custom',
+        height: 'Custom',
+        glass: '5-20mm Toughened / Laminated / Low-e'
+      },
+      image: 'https://picsum.photos/600/400?random=7',
+      badge: 'Durable'
     },
     {
       id: 2,
-      name: 'Security Screen Doors',
-      category: 'doors',
-      description: 'Heavy-duty security doors that don\'t compromise on style',
-      features: ['316 Marine Grade', 'Triple Lock System', 'Custom Colors'],
-      specs: { width: '800-1200mm', height: '2000-2400mm', mesh: '316 Stainless Steel' },
-      image: 'https://picsum.photos/600/400?random=2',
-      badge: 'Popular',
+      name: 'Awning Window',
+      category: 'windows',
+      description: 'Top-hinged windows providing ventilation, energy efficiency, and safety.',
+      features: ['Multi-Point Locks', 'Custom Sizes', 'Insect Flyscreen'],
+      specs: {
+        width: 'Custom',
+        height: 'Custom',
+        glass: '5-20mm Low-E / Soundproof / Laminated'
+      },
+      image: 'https://picsum.photos/600/400?random=8',
+      badge: 'Energy Star'
     },
     {
       id: 3,
-      name: 'Double Glazed Awning Windows',
+      name: 'Fixed Window',
       category: 'windows',
-      description: 'Perfect ventilation with superior insulation properties',
-      features: ['Tilt & Turn', 'Sound Insulation', 'Child Safety'],
-      specs: { width: '400-1200mm', height: '400-1200mm', uValue: '1.4 W/m²K' },
-      image: 'https://picsum.photos/600/400?random=3',
+      description: 'Non-opening panoramic windows for maximum light and unobstructed views.',
+      features: ['Superior Sealing', 'WERS Certified', 'Compatible with Operable Types'],
+      specs: {
+        width: 'Custom',
+        height: 'Custom',
+        glass: '5-20mm Low-E / Triple Glazed'
+      },
+      image: 'https://picsum.photos/600/400?random=9',
+      badge: 'Panoramic'
     },
     {
       id: 4,
-      name: 'French Patio Doors',
-      category: 'doors',
-      description: 'Elegant French doors for seamless indoor-outdoor living',
-      features: ['Wide Opening', 'Security Glass', 'Multi-point Locking'],
-      specs: { width: '1200-2400mm', height: '2000-2400mm', panels: '2-4 Panels' },
-      image: 'https://picsum.photos/600/400?random=4',
-      badge: 'Premium',
+      name: 'Glass Louvre Window',
+      category: 'windows',
+      description: 'Adjustable louvered windows that enhance airflow, privacy, and energy efficiency.',
+      features: ['Ventilation & Light Control', 'Privacy Protection', 'UV & Weather Resistant'],
+      specs: {
+        width: 'Custom',
+        height: 'Custom',
+        glass: '5-20mm Low-E / Frosted / Tinted'
+      },
+      image: 'https://picsum.photos/600/400?random=10',
+      badge: 'Breezy'
     },
     {
       id: 5,
-      name: 'Bi-fold Door Systems',
+      name: 'Stacker Door',
       category: 'doors',
-      description: 'Transform your space with seamless folding door systems',
-      features: ['Smooth Operation', 'Weather Sealing', 'Space Saving'],
-      specs: { panels: '2-7 Panels', width: '1800-6000mm', threshold: 'Low Profile' },
-      image: 'https://picsum.photos/600/400?random=5',
+      description: 'Multi-panel sliding doors that expand your indoor-outdoor living space.',
+      features: ['AS2047 Certified', 'Smooth Sliding', 'Triple-Track Option'],
+      specs: {
+        width: 'Custom',
+        height: 'Custom',
+        panels: '3-6 Panels'
+      },
+      image: 'https://picsum.photos/600/400?random=11',
+      badge: 'Expansive'
     },
     {
       id: 6,
-      name: 'Soundproof Windows',
-      category: 'windows',
-      description: 'Ultimate noise reduction for peaceful living',
-      features: ['STC 45+ Rating', 'Laminated Glass', 'Professional Installation'],
-      specs: { rating: 'STC 45+', reduction: 'Up to 45dB', glass: 'Triple Glazed' },
-      image: 'https://picsum.photos/600/400?random=6',
+      name: 'Sliding Door',
+      category: 'doors',
+      description: 'Space-saving doors perfect for patios and terraces, built for Aussie conditions.',
+      features: ['AS2047 Certified', 'Stainless Steel Mesh Screens', 'Custom Designs'],
+      specs: {
+        width: 'Custom',
+        height: 'Custom',
+        glass: '5-20mm Low-E / Soundproof / Laminated'
+      },
+      image: 'https://picsum.photos/600/400?random=12',
+      badge: 'Classic'
     },
-  ];
+    {
+      id: 7,
+      name: 'Hinged Door',
+      category: 'doors',
+      description: 'High-performance hinged doors with elegant appearance and strong insulation.',
+      features: ['Seamless Opening', 'Insulated Panel Options', 'Multi-point Locking'],
+      specs: {
+        width: '800-1200mm',
+        height: '2000-2400mm',
+        panels: '1-2 Panels'
+      },
+      image: 'https://picsum.photos/600/400?random=13',
+      badge: 'Elegant'
+    },
+    {
+      id: 8,
+      name: 'Bi-folding Door',
+      category: 'doors',
+      description: 'Foldable door systems to open up living space and bring outdoors in.',
+      features: ['Low Threshold', 'Smooth Folding System', 'Hidden Rollers'],
+      specs: {
+        width: '1800-6000mm',
+        panels: '2-7 Panels',
+        threshold: 'Low Profile'
+      },
+      image: 'https://picsum.photos/600/400?random=14',
+      badge: 'Space Saver'
+    }
+  ]
 
   const filteredProducts = products.filter(product => {
     const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory;
