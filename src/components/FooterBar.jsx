@@ -17,7 +17,7 @@ import {
               alt="SUPERBUILD Logo"
               className="w-12 h-12 object-cover"
             />
-            <span className="text-xl font-bold text-blue-900">
+            <span className="text-xl font-bold text-blue-900 tracking-tight uppercase" style={{fontFamily: '"Impact", "Arial Black", "Helvetica Neue", sans-serif', fontWeight: 800, letterSpacing: '0.05em', transform: 'skew(-5deg)', textShadow: '2px 2px 4px rgba(30, 58, 138, 0.2)', filter: 'contrast(1.2)'}}>
               SUPERBUILD
             </span>
           </div>
