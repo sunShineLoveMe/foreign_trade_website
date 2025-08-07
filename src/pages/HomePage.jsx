@@ -279,6 +279,55 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Product Process Section */}
+      <section className="section-padding bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">
+              Our Manufacturing Excellence
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Discover our meticulous 5-step manufacturing process that ensures every window and door meets the highest quality standards for Australian conditions.
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="aspect-[16/9] relative">
+              <img 
+                src="/assets/product_process/product_process.png" 
+                alt="Windows and Doors Manufacturing Process Flow"
+                className="w-full h-full object-contain bg-white p-8"
+              />
+            </div>
+            
+            <div className="p-8">
+              <div className="grid md:grid-cols-4 gap-6 text-center">
+                <div className="p-4">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">01</div>
+                  <h3 className="font-semibold text-slate-900 mb-1">Design & Planning</h3>
+                  <p className="text-sm text-slate-600">Custom measurements and specifications</p>
+                </div>
+                <div className="p-4">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">02</div>
+                  <h3 className="font-semibold text-slate-900 mb-1">Material Selection</h3>
+                  <p className="text-sm text-slate-600">Premium aluminum and glass materials</p>
+                </div>
+                <div className="p-4">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">03</div>
+                  <h3 className="font-semibold text-slate-900 mb-1">Precision Manufacturing</h3>
+                  <p className="text-sm text-slate-600">State-of-the-art CNC precision cutting</p>
+                </div>
+                <div className="p-4">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">04</div>
+                  <h3 className="font-semibold text-slate-900 mb-1">Quality Assurance</h3>
+                  <p className="text-sm text-slate-600">Rigorous testing and certification</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-blue-600 to-blue-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
