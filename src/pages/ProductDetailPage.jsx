@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import FooterBar from '../components/FooterBar';
 
 const ProductDetailPage = () => {
   const { productId } = useParams();
+  const navigate = useNavigate();
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const { t } = useTranslation();
@@ -247,7 +248,7 @@ const ProductDetailPage = () => {
   }, [productId, products]);
 
   const handleProductSelect = (product) => {
-    setSelectedProduct(product);
+    navigate(`/product/${product.id}`);
   };
 
   return (
