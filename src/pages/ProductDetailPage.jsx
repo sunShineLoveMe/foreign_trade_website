@@ -15,77 +15,299 @@ const ProductDetailPage = () => {
   const products = [
     {
       id: 1,
-      name: 'Premium Aluminum Sliding Windows',
-      category: 'Windows',
-      shortName: 'Aluminum Sliding',
-      mainImage: 'https://picsum.photos/800/600?random=1',
+      name: 'Sliding Window',
+      category: 'sliding-window',
+      shortName: 'Sliding Window',
+      mainImage: '/assets/products/sliding-window.png',
       images: [
-        'https://picsum.photos/800/600?random=1',
+        '/assets/products/sliding-window.png',
         'https://picsum.photos/800/600?random=11',
         'https://picsum.photos/800/600?random=12',
         'https://picsum.photos/800/600?random=13'
       ],
       features: [
-        'Double-glazed energy-efficient glass',
-        'High-strength aluminum frame, corrosion-resistant',
-        'Multi-point security locking system',
-        'Waterproof sealing design',
-        'Smooth sliding operation',
-        'UV protection coating'
+        'Thermal or Non-Thermal Break Options',
+        'Low-E Double/Triple Glazing',
+        'Multi-Point Locking System',
+        'Space-saving design',
+        'Weather-tight sealing',
+        'Custom sizing available'
       ],
-      description: 'Premium aluminum sliding windows designed specifically for Australian climate. Constructed with 6063-T5 high-strength aluminum profiles and double-glazed units for excellent thermal performance. Unique drainage system effectively prevents water infiltration.',
+      description: 'Space-saving and weather-tight windows perfect for luxury homes and commercial use. Constructed with high-strength aluminum profiles and double-glazed units for excellent thermal performance.',
       applications: [
-        'Living room floor-to-ceiling windows',
-        'Balcony enclosures',
+        'Living room windows',
         'Bedroom windows',
-        'Kitchen ventilation windows',
+        'Commercial spaces',
+        'Kitchen areas',
         'Office partitions'
       ],
       specifications: {
-        'Frame thickness': '1.4mm-2.0mm',
-        'Glass specification': '5mm+12A+5mm double glazing',
-        'Opening method': 'Horizontal sliding',
-        'Color options': 'White/Gray/Wood grain',
-        'Warranty period': '10 years'
+        'Frame Material': 'High-strength aluminum',
+        'Glass Options': '5-20mm Toughened/Laminated/Low-e',
+        'Opening Method': 'Horizontal sliding',
+        'Color Options': 'Custom colors available',
+        'Warranty': '10 years'
       },
       crossSection: 'https://picsum.photos/400/300?random=100'
     },
     {
       id: 2,
-      name: 'Security Screen Doors',
-      category: 'Doors',
-      shortName: 'Security Screen',
-      mainImage: 'https://picsum.photos/800/600?random=2',
+      name: 'Awning Window',
+      category: 'awning-window',
+      shortName: 'Awning Window',
+      mainImage: '/assets/products/awning-window.png',
       images: [
-        'https://picsum.photos/800/600?random=2',
+        '/assets/products/awning-window.png',
         'https://picsum.photos/800/600?random=21',
         'https://picsum.photos/800/600?random=22',
         'https://picsum.photos/800/600?random=23'
       ],
       features: [
-        '316 marine-grade stainless steel mesh',
-        'Triple lock point system',
-        'Anti-pry reinforced design',
-        'Ventilation and mosquito protection',
-        'Custom color options',
-        'Australian safety standard compliant'
+        'Top-hinged design',
+        'Multi-Point Locks',
+        'Custom Sizes',
+        'Insect Flyscreen',
+        'Energy efficiency',
+        'Ventilation control'
       ],
-      description: 'Constructed with 316 marine-grade stainless steel woven mesh offering superior corrosion resistance and strength. Triple lock point system provides bank-grade security while maintaining excellent ventilation. Specifically designed for Australian coastal areas.',
+      description: 'Top-hinged windows providing ventilation, energy efficiency, and safety. Perfect for areas requiring controlled airflow while maintaining security and weather protection.',
       applications: [
-        'Entry door security',
-        'Balcony door safety',
-        'Commercial premises',
-        'Warehouse entrances',
-        'Garage doors'
+        'Bedroom windows',
+        'Study room ventilation',
+        'Bathroom windows',
+        'Kitchen ventilation',
+        'Office windows'
       ],
       specifications: {
-        'Mesh material': '316 stainless steel',
-        'Frame material': 'Aluminum alloy',
-        'Mesh specification': '1.6mm×1.6mm',
-        'Locking': 'Triple lock points',
-        'Warranty period': '15 years'
+        'Frame Material': 'High-strength aluminum',
+        'Glass Options': '5-20mm Low-E/Soundproof/Laminated',
+        'Opening Method': 'Top-hinged awning',
+        'Screen Options': 'Insect flyscreen included',
+        'Warranty': '12 years'
       },
       crossSection: 'https://picsum.photos/400/300?random=101'
+    },
+    {
+      id: 3,
+      name: 'Fixed Window',
+      category: 'fixed-window',
+      shortName: 'Fixed Window',
+      mainImage: '/assets/products/fixed-window.png',
+      images: [
+        '/assets/products/fixed-window.png',
+        'https://picsum.photos/800/600?random=31',
+        'https://picsum.photos/800/600?random=32',
+        'https://picsum.photos/800/600?random=33'
+      ],
+      features: [
+        'Superior Sealing',
+        'WERS Certified',
+        'Compatible with Operable Types',
+        'Maximum daylight',
+        'Unobstructed views',
+        'Custom sizing'
+      ],
+      description: 'Non-opening panoramic windows for maximum light and unobstructed views. Excellent sealing performance and compatibility with other window types for comprehensive window solutions.',
+      applications: [
+        'High-rise buildings',
+        'Commercial facades',
+        'Living room features',
+        'Office partitions',
+        'Display areas'
+      ],
+      specifications: {
+        'Frame Material': 'Thermal break aluminum',
+        'Glass Options': '5-20mm Low-E/Triple Glazed',
+        'Sealing Performance': 'Superior airtightness',
+        'Certification': 'WERS Certified',
+        'Warranty': '10 years'
+      },
+      crossSection: 'https://picsum.photos/400/300?random=102'
+    },
+    {
+      id: 4,
+      name: 'Glass Louvre Window',
+      category: 'glass-louvre-window',
+      shortName: 'Glass Louvre',
+      mainImage: '/assets/products/glass-louvre-window.png',
+      images: [
+        '/assets/products/glass-louvre-window.png',
+        'https://picsum.photos/800/600?random=41',
+        'https://picsum.photos/800/600?random=42',
+        'https://picsum.photos/800/600?random=43'
+      ],
+      features: [
+        'Ventilation & Light Control',
+        'Privacy Protection',
+        'UV & Weather Resistant',
+        'Adjustable glass slats',
+        'Modern aesthetic',
+        'Easy operation'
+      ],
+      description: 'Adjustable louvered windows that enhance airflow, privacy, and energy efficiency. Glass slats can be adjusted to control ventilation and light while maintaining privacy.',
+      applications: [
+        'Bathrooms and kitchens',
+        'Balconies and corridors',
+        'Utility rooms',
+        'Schools and hospitals',
+        'Public areas'
+      ],
+      specifications: {
+        'Frame Material': 'Aluminum alloy or PVC',
+        'Glass Type': '5mm tempered glass slats',
+        'Operating Mode': 'Manual/Hand crank/Electric',
+        'UV Protection': 'Weather resistant coating',
+        'Warranty': '5 years'
+      },
+      crossSection: 'https://picsum.photos/400/300?random=103'
+    },
+    {
+      id: 5,
+      name: 'Stacker Door',
+      category: 'stacker-door',
+      shortName: 'Stacker Door',
+      mainImage: '/assets/products/stacker-door.png',
+      images: [
+        '/assets/products/stacker-door.png',
+        'https://picsum.photos/800/600?random=51',
+        'https://picsum.photos/800/600?random=52',
+        'https://picsum.photos/800/600?random=53'
+      ],
+      features: [
+        'AS2047 Certified',
+        'Smooth Sliding',
+        'Triple-Track Option',
+        'Multi-panel design',
+        'Indoor-outdoor connection',
+        'Space maximization'
+      ],
+      description: 'Multi-panel sliding doors that expand your indoor-outdoor living space. AS2047 certified for Australian standards with smooth sliding operation and triple-track options.',
+      applications: [
+        'Balcony doors',
+        'Patio connections',
+        'Living room openings',
+        'Restaurant partitions',
+        'Entertainment areas'
+      ],
+      specifications: {
+        'Certification': 'AS2047 Certified',
+        'Panel Range': '3-6 Panels',
+        'Track Options': 'Triple-track available',
+        'Width Range': 'Custom widths',
+        'Warranty': '12 years'
+      },
+      crossSection: 'https://picsum.photos/400/300?random=104'
+    },
+    {
+      id: 6,
+      name: 'Sliding Door',
+      category: 'sliding-door',
+      shortName: 'Sliding Door',
+      mainImage: '/assets/products/sliding-door.png',
+      images: [
+        '/assets/products/sliding-door.png',
+        'https://picsum.photos/800/600?random=61',
+        'https://picsum.photos/800/600?random=62',
+        'https://picsum.photos/800/600?random=63'
+      ],
+      features: [
+        'AS2047 Certified',
+        'Stainless Steel Mesh Screens',
+        'Custom Designs',
+        'Space-saving operation',
+        'Weather resistance',
+        'Security features'
+      ],
+      description: 'Space-saving doors perfect for patios and terraces, built for Aussie conditions. AS2047 certified with stainless steel mesh screens and custom design options.',
+      applications: [
+        'Patio doors',
+        'Terrace entrances',
+        'Balcony access',
+        'Backyard connections',
+        'Indoor-outdoor transitions'
+      ],
+      specifications: {
+        'Certification': 'AS2047 Certified',
+        'Screen Options': 'Stainless steel mesh',
+        'Glass Options': '5-20mm Low-E/Soundproof/Laminated',
+        'Design': 'Custom designs available',
+        'Warranty': '15 years'
+      },
+      crossSection: 'https://picsum.photos/400/300?random=105'
+    },
+    {
+      id: 7,
+      name: 'Hinged Door',
+      category: 'hinged-door',
+      shortName: 'Hinged Door',
+      mainImage: '/assets/products/hinged-door.png',
+      images: [
+        '/assets/products/hinged-door.png',
+        'https://picsum.photos/800/600?random=71',
+        'https://picsum.photos/800/600?random=72',
+        'https://picsum.photos/800/600?random=73'
+      ],
+      features: [
+        'Seamless Opening',
+        'Insulated Panel Options',
+        'Multi-point Locking',
+        'Elegant appearance',
+        'Strong insulation',
+        'Premium hardware'
+      ],
+      description: 'High-performance hinged doors with elegant appearance and strong insulation. Multi-point locking system with premium hardware for security and style.',
+      applications: [
+        'Main entrances',
+        'Interior doors',
+        'Bedroom access',
+        'Office doors',
+        'Commercial spaces'
+      ],
+      specifications: {
+        'Width Range': '800-1200mm',
+        'Height Range': '2000-2400mm',
+        'Panel Options': '1-2 Panels',
+        'Hardware': 'Multi-point locking',
+        'Warranty': '15 years'
+      },
+      crossSection: 'https://picsum.photos/400/300?random=107'
+    },
+    {
+      id: 8,
+      name: 'Bi-folding Door',
+      category: 'bi-folding-door',
+      shortName: 'Bi-folding Door',
+      mainImage: '/assets/products/bi-folding-door.png',
+      images: [
+        '/assets/products/bi-folding-door.png',
+        'https://picsum.photos/800/600?random=81',
+        'https://picsum.photos/800/600?random=82',
+        'https://picsum.photos/800/600?random=83'
+      ],
+      features: [
+        'Low Threshold',
+        'Smooth Folding System',
+        'Hidden Rollers',
+        'Space-saving design',
+        'Wide opening capability',
+        'Modern aesthetics'
+      ],
+      description: 'Foldable door systems to open up living space and bring outdoors in. Features low threshold design with smooth folding operation and hidden rollers for modern aesthetics.',
+      applications: [
+        'Living room openings',
+        'Restaurant partitions',
+        'Conference rooms',
+        'Entertainment areas',
+        'Commercial spaces'
+      ],
+      specifications: {
+        'Width Range': '1800-6000mm',
+        'Panel Range': '2-7 Panels',
+        'Threshold': 'Low profile design',
+        'Operation': 'Smooth folding system',
+        'Warranty': '12 years'
+      },
+      crossSection: 'https://picsum.photos/400/300?random=108'
     },
     {
       id: 3,
@@ -311,8 +533,20 @@ const ProductDetailPage = () => {
   
 
   const categories = [
-    { id: 'windows', name: '铝合金窗', products: products.filter(p => p.category === 'Windows') },
-    { id: 'doors', name: '安全门', products: products.filter(p => p.category === 'Doors') }
+    { 
+      id: 'windows', 
+      name: 'Windows', 
+      products: products.filter(p => 
+        ['sliding-window', 'awning-window', 'fixed-window', 'glass-louvre-window'].includes(p.category)
+      ) 
+    },
+    { 
+      id: 'doors', 
+      name: 'Doors', 
+      products: products.filter(p => 
+        ['stacker-door', 'sliding-door', 'hinged-door', 'bi-folding-door'].includes(p.category)
+      ) 
+    }
   ];
 
   useEffect(() => {
