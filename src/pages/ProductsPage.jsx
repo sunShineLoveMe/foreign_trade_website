@@ -8,16 +8,22 @@ const ProductsPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   const categories = [
-    { id: 'all', name: 'All Products', count: 6 },
-    { id: 'windows', name: 'Windows', count: 4 },
-    { id: 'doors', name: 'Doors', count: 2 },
+    { id: 'all', name: 'All Products', count: 8 },
+    { id: 'sliding-window', name: 'Sliding Windows', count: 1 },
+    { id: 'awning-window', name: 'Awning Windows', count: 1 },
+    { id: 'fixed-window', name: 'Fixed Windows', count: 1 },
+    { id: 'glass-louvre-window', name: 'Glass Louvre Windows', count: 1 },
+    { id: 'stacker-door', name: 'Stacker Doors', count: 1 },
+    { id: 'sliding-door', name: 'Sliding Doors', count: 1 },
+    { id: 'hinged-door', name: 'Hinged Doors', count: 1 },
+    { id: 'bi-folding-door', name: 'Bi-folding Doors', count: 1 },
   ];
 
   const products = [
     {
       id: 1,
       name: 'Sliding Window',
-      category: 'windows',
+      category: 'sliding-window',
       description: 'Space-saving and weather-tight windows perfect for luxury homes and commercial use.',
       features: ['Thermal or Non-Thermal Break Options', 'Low-E Double/Triple Glazing', 'Multi-Point Locking System'],
       specs: {
@@ -31,7 +37,7 @@ const ProductsPage = () => {
     {
       id: 2,
       name: 'Awning Window',
-      category: 'windows',
+      category: 'awning-window',
       description: 'Top-hinged windows providing ventilation, energy efficiency, and safety.',
       features: ['Multi-Point Locks', 'Custom Sizes', 'Insect Flyscreen'],
       specs: {
@@ -45,7 +51,7 @@ const ProductsPage = () => {
     {
       id: 3,
       name: 'Fixed Window',
-      category: 'windows',
+      category: 'fixed-window',
       description: 'Non-opening panoramic windows for maximum light and unobstructed views.',
       features: ['Superior Sealing', 'WERS Certified', 'Compatible with Operable Types'],
       specs: {
@@ -59,7 +65,7 @@ const ProductsPage = () => {
     {
       id: 4,
       name: 'Glass Louvre Window',
-      category: 'windows',
+      category: 'glass-louvre-window',
       description: 'Adjustable louvered windows that enhance airflow, privacy, and energy efficiency.',
       features: ['Ventilation & Light Control', 'Privacy Protection', 'UV & Weather Resistant'],
       specs: {
@@ -73,7 +79,7 @@ const ProductsPage = () => {
     {
       id: 5,
       name: 'Stacker Door',
-      category: 'doors',
+      category: 'stacker-door',
       description: 'Multi-panel sliding doors that expand your indoor-outdoor living space.',
       features: ['AS2047 Certified', 'Smooth Sliding', 'Triple-Track Option'],
       specs: {
@@ -87,7 +93,7 @@ const ProductsPage = () => {
     {
       id: 6,
       name: 'Sliding Door',
-      category: 'doors',
+      category: 'sliding-door',
       description: 'Space-saving doors perfect for patios and terraces, built for Aussie conditions.',
       features: ['AS2047 Certified', 'Stainless Steel Mesh Screens', 'Custom Designs'],
       specs: {
@@ -101,7 +107,7 @@ const ProductsPage = () => {
     {
       id: 7,
       name: 'Hinged Door',
-      category: 'doors',
+      category: 'hinged-door',
       description: 'High-performance hinged doors with elegant appearance and strong insulation.',
       features: ['Seamless Opening', 'Insulated Panel Options', 'Multi-point Locking'],
       specs: {
@@ -115,7 +121,7 @@ const ProductsPage = () => {
     {
       id: 8,
       name: 'Bi-folding Door',
-      category: 'doors',
+      category: 'bi-folding-door',
       description: 'Foldable door systems to open up living space and bring outdoors in.',
       features: ['Low Threshold', 'Smooth Folding System', 'Hidden Rollers'],
       specs: {
