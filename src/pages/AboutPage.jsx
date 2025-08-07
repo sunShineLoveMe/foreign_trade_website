@@ -143,6 +143,7 @@ const AboutPage = () => {
                     src={item.image} 
                     alt={item.title}
                     className="w-full h-32 object-cover rounded-lg shadow-md"
+                    style={index === 0 || index === 4 ? { objectPosition: 'center 75%' } : {}}
                   />
                 </div>
               </div>
