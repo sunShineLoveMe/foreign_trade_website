@@ -335,7 +335,7 @@ const ProductDetailPage = () => {
   }, [productId]); // Only depend on productId, products array is stable
 
   const handleProductSelect = (product) => {
-    navigate(`/product/${product.id}`);
+    setSelectedProduct(product);
   };
 
   return (
