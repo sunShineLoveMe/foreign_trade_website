@@ -156,9 +156,10 @@ const ProductsPage = () => {
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredProducts.map((product) => (
-            <div
+            <Link
               key={product.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105"
+              to={`/product/${product.id}`}
+              className="block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
             >
               <div className="relative">
                 <ImageWithLoading
@@ -168,58 +169,34 @@ const ProductsPage = () => {
                 />
                 {product.badge && (
                   <div className="absolute top-4 right-4">
-                    <span className="bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-full"
-                    >
+                    <span className="bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-full">
                       {product.badge}
                     </span>
                   </div>
                 )}
-                <div className="absolute top-4 left-4"
-                  >
-                    <span className="bg-blue-600 text-white px-2 py-1 text-xs font-medium rounded-full"
-                    >
-                      {product.category}
-                    </span>
-                  </div>
+                <div className="absolute top-4 left-4">
+                  <span className="bg-blue-600 text-white px-2 py-1 text-xs font-medium rounded-full">
+                    {product.category}
+                  </span>
+                </div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-slate-900 mb-2"
-                  >{product.name}</h3>
-                <p className="text-slate-600 text-sm mb-4"
-                  >{product.description}</p>
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">{product.name}</h3>
+                <p className="text-slate-600 text-sm mb-4">{product.description}</p>
                 
-                <div className="flex flex-wrap gap-1 mb-4"
-                  >
-                    {product.features.map((feature, idx) => (
-                      <span
-                        key={idx}
-                        className="bg-blue-50 text-blue-700 text-xs px-2 py-1 rounded-full"
-                      >
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
-                
-                <div className="border-t border-slate-100 pt-4"
-                  >
-                    <div className="flex justify-end items-center mb-4"
-                      >
-                        <Link
-                          to={`/product/${product.id}`}
-                          className="text-blue-600 hover:text-blue-800 font-medium text-sm"
-                        >
-                          View Details
-                        </Link>
-                      </div>
-                    
-                    <div className="text-xs text-slate-500"
-                      >
-                        <strong>Specs:</strong> {Object.entries(product.specs).slice(0, 2).map(([key, value]) => `${key}: ${value}`).join(', ')}
-                      </div>
-                  </div>
+                <div className="flex flex-wrap gap-1">
+                  {product.features.map((feature, idx) => (
+                    <span
+                      key={idx}
+                      className="bg-blue-50 text-blue-700 text-xs px-2 py-1 rounded-full"
+                    >
+                      {feature}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
