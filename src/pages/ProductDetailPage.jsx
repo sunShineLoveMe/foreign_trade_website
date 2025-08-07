@@ -4,15 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import FooterBar from '../components/FooterBar';
 
-const ProductDetailPage = () => {
-  const { productId } = useParams();
-  const navigate = useNavigate();
-  const [selectedProduct, setSelectedProduct] = useState(null);
-
-  const { t } = useTranslation();
-
-  // Comprehensive product data in English
-  const products = [
+// Comprehensive product data in English - defined outside component to prevent re-renders
+const products = [
     {
       id: 1,
       name: 'Sliding Window',
@@ -308,231 +301,11 @@ const ProductDetailPage = () => {
         'Warranty': '12 years'
       },
       crossSection: 'https://picsum.photos/400/300?random=108'
-    },
-    {
-      id: 3,
-      name: 'Double Glazed Awning Windows',
-      category: 'Windows',
-      shortName: 'Awning Window',
-      mainImage: 'https://picsum.photos/800/600?random=3',
-      images: [
-        'https://picsum.photos/800/600?random=3',
-        'https://picsum.photos/800/600?random=31',
-        'https://picsum.photos/800/600?random=32',
-        'https://picsum.photos/800/600?random=33'
-      ],
-      features: [
-        'Tilt opening design',
-        'Sound and thermal insulation',
-        'Child safety locks',
-        'Rain protection design',
-        'Easy cleaning',
-        'Energy efficiency certified'
-      ],
-      description: 'Top-hung awning window design providing excellent ventilation performance. Double glazing effectively blocks noise and heat, particularly suitable for bedrooms and study rooms. Unique rain protection design ensures ventilation even during rain.',
-      applications: [
-        'Bedroom windows',
-        'Study room ventilation',
-        'Bathroom windows',
-        'Kitchen ventilation',
-        'Office windows'
-      ],
-      specifications: {
-        'Opening angle': '15-45 degrees',
-        'Glass specification': '6mm+12A+6mm double glazing',
-        'Seal grade': 'Grade A',
-        'Wind pressure performance': 'C4 level',
-        'Warranty period': '12 years'
-      },
-      crossSection: 'https://picsum.photos/400/300?random=102'
-    },
-    {
-      id: 4,
-      name: 'French Patio Doors',
-      category: 'Doors',
-      shortName: 'French Patio',
-      mainImage: 'https://picsum.photos/800/600?random=4',
-      images: [
-        'https://picsum.photos/800/600?random=4',
-        'https://picsum.photos/800/600?random=41',
-        'https://picsum.photos/800/600?random=42',
-        'https://picsum.photos/800/600?random=43'
-      ],
-      features: [
-        'Large opening design',
-        'Safety glass',
-        'Multi-point locking',
-        'Sealed sound insulation',
-        'Maximum natural light',
-        'Open and spacious feel'
-      ],
-      description: 'Classic French door design creating seamless connection between indoor and outdoor spaces. Features high-strength safety glass with multi-point locking system, offering both beauty and security. Particularly suitable for balcony and garden connections.',
-      applications: [
-        'Balcony doors',
-        'Garden doors',
-        'Living room doors',
-        'Dining room doors',
-        'Patio doors'
-      ],
-      specifications: {
-        'Door panel quantity': '2-4 panels',
-        'Opening method': 'Inward/Outward opening',
-        'Glass type': 'Tempered safety glass',
-        'Locking': 'Multi-point locking',
-        'Warranty period': '15 years'
-      },
-      crossSection: 'https://picsum.photos/400/300?random=103'
-    },
-    {
-      id: 5,
-      name: 'Bi-fold Door Systems',
-      category: 'Doors',
-      shortName: 'Bi-fold System',
-      mainImage: 'https://picsum.photos/800/600?random=5',
-      images: [
-        'https://picsum.photos/800/600?random=5',
-        'https://picsum.photos/800/600?random=51',
-        'https://picsum.photos/800/600?random=52',
-        'https://picsum.photos/800/600?random=53'
-      ],
-      features: [
-        'Smooth operation',
-        'Waterproof sealing',
-        'Space saving',
-        'Large opening design',
-        'Thermal insulation',
-        'Secure locking'
-      ],
-      description: 'Modern bi-fold door system that can fully open to create wide passages. High-quality track system ensures smooth and effortless operation. Particularly suitable for spaces requiring large openings like restaurants and conference rooms.',
-      applications: [
-        'Restaurant partitions',
-        'Conference rooms',
-        'Balcony doors',
-        'Commercial spaces',
-        'Home entertainment areas'
-      ],
-      specifications: {
-        'Panel quantity': '2-7 panels',
-        'Maximum width': '6000mm',
-        'Track type': 'Low threshold/Barrier-free',
-        'Sealing performance': 'Grade A',
-        'Warranty period': '12 years'
-      },
-      crossSection: 'https://picsum.photos/400/300?random=104'
-    },
-    {
-      id: 6,
-      name: 'Soundproof Windows',
-      category: 'Windows',
-      shortName: 'Soundproof',
-      mainImage: 'https://picsum.photos/800/600?random=6',
-      images: [
-        'https://picsum.photos/800/600?random=6',
-        'https://picsum.photos/800/600?random=61',
-        'https://picsum.photos/800/600?random=62',
-        'https://picsum.photos/800/600?random=63'
-      ],
-      features: [
-        'STC45+ sound rating',
-        'Triple laminated glass',
-        'Professional installation',
-        'Noise reduction',
-        'Energy efficient',
-        'Aesthetic appearance'
-      ],
-      description: 'Professional soundproof window system featuring triple laminated glass construction that effectively blocks external noise. STC45+ sound rating with noise reduction up to 45 decibels. Particularly suitable for street-facing residential and commercial applications.',
-      applications: [
-        'Street-facing residences',
-        'School classrooms',
-        'Hospital wards',
-        'Office spaces',
-        'Recording studios'
-      ],
-      specifications: {
-        'Sound rating': 'STC45+',
-        'Noise reduction': '45+ decibels',
-        'Glass specification': '8mm+8A+8mm+8A+8mm',
-        'Frame material': 'Thermal break aluminum',
-        'Warranty period': '15 years'
-      },
-      crossSection: 'https://picsum.photos/400/300?random=105'
-    },
-    {
-      id: 7,
-      name: 'Louver Glass Windows',
-      category: 'Windows',
-      shortName: 'Louver Window',
-      mainImage: 'https://picsum.photos/800/600?random=7',
-      images: [
-        'https://picsum.photos/800/600?random=7',
-        'https://picsum.photos/800/600?random=71',
-        'https://picsum.photos/800/600?random=72',
-        'https://picsum.photos/800/600?random=73'
-      ],
-      features: [
-        'Freely adjustable glass slats',
-        'Good ventilation and light transmission',
-        'Optional hand crank operation',
-        'Tight sealing to prevent wind and rain',
-        'Modern aesthetic design'
-      ],
-      description: 'Louver glass windows are composed of multiple horizontally aligned glass slats that can be opened and closed simultaneously through mechanical devices. The design is simple and lightweight, suitable for areas requiring ventilation and privacy.',
-      applications: [
-        'Bathrooms and kitchens',
-        'Balconies and corridors',
-        'Utility rooms',
-        'Schools and hospitals',
-        'Public restrooms'
-      ],
-      specifications: {
-        'Frame Material': 'Aluminum alloy or PVC',
-        'Glass Type': '5mm tempered glass',
-        'Operating Mode': 'Manual / Hand crank / Electric',
-        'Color Options': 'White, Gray, Black',
-        'Warranty': '5 years'
-      },
-      crossSection: 'https://picsum.photos/400/300?random=107'
-    },
-    {
-      id: 8,
-      name: 'Fixed Windows',
-      category: 'Windows',
-      shortName: 'Fixed Window',
-      mainImage: 'https://picsum.photos/800/600?random=8',
-      images: [
-        'https://picsum.photos/800/600?random=8',
-        'https://picsum.photos/800/600?random=81',
-        'https://picsum.photos/800/600?random=82',
-        'https://picsum.photos/800/600?random=83'
-      ],
-      features: [
-        'No opening mechanism',
-        'Excellent sealing and insulation',
-        'Maximized daylight exposure',
-        'Simple and elegant design',
-        'Customizable sizes and shapes'
-      ],
-      description: 'Fixed windows are windows that cannot be opened and are used to allow light in and provide views. Their superior airtightness provides excellent insulation and security.',
-      applications: [
-        'High-rise buildings',
-        'Commercial facades',
-        'Display windows',
-        'Hotel lobbies',
-        'Office partitions'
-      ],
-      specifications: {
-        'Glass Type': 'Double or triple glazing',
-        'Frame Material': 'Aluminum or uPVC',
-        'Sealing Performance': 'Excellent airtightness',
-        'Color Options': 'Customized',
-        'Warranty': '10 years'
-      },
-      crossSection: 'https://picsum.photos/400/300?random=108'
     }
   ];
   
 
-  const categories = [
+const categories = [
     { 
       id: 'windows', 
       name: 'Windows', 
@@ -549,10 +322,17 @@ const ProductDetailPage = () => {
     }
   ];
 
+const ProductDetailPage = () => {
+  const { productId } = useParams();
+  const navigate = useNavigate();
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const { t } = useTranslation();
+
   useEffect(() => {
     const product = products.find(p => p.id === parseInt(productId));
     setSelectedProduct(product || products[0]);
-  }, [productId, products]);
+  }, [productId]); // Only depend on productId, products array is stable
 
   const handleProductSelect = (product) => {
     navigate(`/product/${product.id}`);
@@ -578,13 +358,13 @@ const ProductDetailPage = () => {
               <nav className="space-y-4">
                 {categories.map((category) => (
                   <div key={category.id}>
-                    <h3 className="font-semibold text-slate-700 mb-3">{category.id === 'windows' ? 'Windows' : 'Doors'}</h3>
+                    <h3 className="font-semibold text-slate-700 mb-3">{category.name}</h3>
                     <div className="space-y-2 ml-4">
                       {category.products.map((product) => (
                         <button
                           key={product.id}
                           onClick={() => handleProductSelect(product)}
-                          className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
+                          className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors cursor-pointer ${
                             selectedProduct?.id === product.id
                               ? 'bg-blue-100 text-blue-800 font-medium'
                               : 'text-slate-600 hover:bg-slate-100'
