@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ImageWithLoading from '../components/ImageWithLoading';
 import { Link } from 'react-router-dom';
 import FooterBar from '../components/FooterBar';
-import ContactSection from '../components/ContactSection';
 
 const ProductsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -206,8 +205,12 @@ const ProductsPage = () => {
                   >
                     <div className="flex justify-end items-center mb-4"
                       >
-                        <button className="text-blue-600 hover:text-blue-800 font-medium text-sm"
-                          >View Details</button>
+                        <Link
+                          to={`/product/${product.id}`}
+                          className="text-blue-600 hover:text-blue-800 font-medium text-sm"
+                        >
+                          View Details
+                        </Link>
                       </div>
                     
                     <div className="text-xs text-slate-500"

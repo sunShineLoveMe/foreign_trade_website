@@ -10,6 +10,7 @@ import HurricaneWindowsPage from './pages/HurricaneWindowsPage';
 import AboutPage from './pages/AboutPage';
 import CertificatesPage from './pages/CertificatesPage';
 import ContactPage from './pages/ContactPage';
+import ProductDetailPage from './pages/ProductDetailPage';
 import AnimatedPage from './components/AnimatedPage';
 
 const AnimatedRoutes = () => {
@@ -51,6 +52,11 @@ const AnimatedRoutes = () => {
         <Route path="/contact" element={
           <AnimatedPage>
             <ContactPage />
+          </AnimatedPage>
+        } />
+        <Route path="/product/:productId" element={
+          <AnimatedPage>
+            <ProductDetailPage />
           </AnimatedPage>
         } />
       </Routes>
