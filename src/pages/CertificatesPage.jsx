@@ -24,7 +24,7 @@ const CertificatesPage = () => {
       issueDate: '2024-01-15',
       expiryDate: '2027-01-14',
       description: 'Quality management system certification demonstrating our commitment to consistent quality and continuous improvement in manufacturing processes.',
-      image: 'https://picsum.photos/600x400?random=24',
+      image: '/assets/certificates/report-1.png',
       downloadUrl: '#',
     },
     {
@@ -35,18 +35,51 @@ const CertificatesPage = () => {
       issueDate: '2024-03-20',
       expiryDate: '2029-03-19',
       description: 'Compliance with Australian and New Zealand standards for windows and external glazed doors, ensuring safety, performance, and durability.',
-      image: 'https://picsum.photos/600x400?random=25',
+      image: '/assets/certificates/certificate-1.png',
       downloadUrl: '#',
     },
     {
-      id: 5,
+      id: 3,
       name: 'Energy Rating Certification',
       category: 'product',
       issuer: 'Australian Window Association',
       issueDate: '2024-01-30',
       expiryDate: '2027-01-29',
       description: 'Energy efficiency ratings for windows and doors, helping customers achieve optimal thermal performance.',
-      image: 'https://picsum.photos/600x400?random=28',
+      image: '/assets/certificates/certificate-2.png',
+      downloadUrl: '#',
+    },
+    {
+      id: 4,
+      name: 'Product Performance Certificate',
+      category: 'product',
+      issuer: 'Certification Authority',
+      issueDate: '2024-02-15',
+      expiryDate: '2027-02-14',
+      description: 'Comprehensive product performance testing and validation for Australian conditions.',
+      image: '/assets/certificates/certificate-3.png',
+      downloadUrl: '#',
+    },
+    {
+      id: 5,
+      name: 'Quality Test Report',
+      category: 'quality',
+      issuer: 'Independent Testing Lab',
+      issueDate: '2024-03-10',
+      expiryDate: '2027-03-09',
+      description: 'Detailed quality assessment report covering material specifications and performance standards.',
+      image: '/assets/certificates/report-2.png',
+      downloadUrl: '#',
+    },
+    {
+      id: 6,
+      name: 'Safety Compliance Report',
+      category: 'quality',
+      issuer: 'Safety Standards Institute',
+      issueDate: '2024-04-05',
+      expiryDate: '2027-04-04',
+      description: 'Comprehensive safety compliance testing ensuring all products meet international safety standards.',
+      image: '/assets/certificates/report-3.png',
       downloadUrl: '#',
     },
   ];
@@ -67,17 +100,17 @@ const CertificatesPage = () => {
     <div className="pt-20 min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             {t('certificates.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             {t('certificates.description')}
           </p>
-        </div>
+        </div> */}
 
         {/* Category Filter */}
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <div className="flex flex-wrap gap-2 justify-center">
             {categories.map((category) => (
               <button
@@ -93,60 +126,76 @@ const CertificatesPage = () => {
               </button>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Results Count */}
-        <div className="mb-6 text-center">
+        {/* <div className="mb-6 text-center">
           <p className="text-gray-600">
             Showing {filteredCertificates.length} of {certificates.length} certificates
           </p>
+        </div> */}
+
+        {/* <!-- Professional Certificate Display Section --> */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* <!-- Main Title --> */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
+            QUALIFICATION CERTIFICATE
+          </h1>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            We have passed international testing and certifications through authorized labs and third-party inspections, ensuring the highest quality for our products.
+          </p>
         </div>
 
-        {/* Certificates Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredCertificates.map((certificate) => (
-            <div
-              key={certificate.id}
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
-            >
-              <ImageWithLoading
-                src={certificate.image}
-                alt={certificate.name}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <div className="mb-2">
-                  <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
-                    {categories.find(c => c.id === certificate.category)?.name}
-                  </span>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  {certificate.name}
-                </h3>
-                <p className="text-sm text-gray-600 mb-2">
-                  <span className="font-medium">Issuer:</span> {certificate.issuer}
-                </p>
-                <p className="text-sm text-gray-600 mb-4">
-                  <span className="font-medium">Valid until:</span> {new Date(certificate.expiryDate).toLocaleDateString()}
-                </p>
-                <div className="flex gap-2">
-                  <button
-                    onClick={() => openModal(certificate)}
-                    className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors text-sm"
-                  >
-                    View Details
-                  </button>
-                  <a
-                    href={certificate.downloadUrl}
-                    className="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors text-sm text-center"
-                  >
-                    Download
-                  </a>
+        {/* Product Certificates Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-serif font-bold text-center text-gray-900 mb-12">
+            Product Certificates
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {certificates.filter(cert => cert.category === 'product').map((certificate, index) => (
+              <div key={certificate.id} className="flex justify-center">
+                <div className="relative">
+                  <div className="w-full max-w-sm">
+                    <div className="border-4 border-amber-400 rounded-lg p-2 bg-gradient-to-br from-amber-50 to-amber-100 shadow-lg">
+                      <ImageWithLoading
+                        src={certificate.image}
+                        alt={certificate.name}
+                        className="w-full h-64 object-cover rounded-md"
+                      />
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
+        {/* Test Reports Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-serif font-bold text-center text-gray-900 mb-12">
+            Test Reports
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {certificates.filter(cert => cert.category === 'quality').map((certificate, index) => (
+              <div key={certificate.id} className="flex justify-center">
+                <div className="relative">
+                  <div className="w-full max-w-sm">
+                    <div className="border-4 border-amber-400 rounded-lg p-2 bg-gradient-to-br from-amber-50 to-amber-100 shadow-lg">
+                      <ImageWithLoading
+                        src={certificate.image}
+                        alt={certificate.name}
+                        className="w-full h-64 object-cover rounded-md"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
         {/* Empty State */}
         {filteredCertificates.length === 0 && (
