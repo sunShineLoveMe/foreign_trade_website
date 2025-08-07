@@ -234,8 +234,81 @@ const ProductDetailPage = () => {
         'Warranty period': '15 years'
       },
       crossSection: 'https://picsum.photos/400/300?random=105'
+    },
+    {
+      id: 7,
+      name: 'Louver Glass Windows',
+      category: 'Windows',
+      shortName: 'Louver Window',
+      mainImage: 'https://picsum.photos/800/600?random=7',
+      images: [
+        'https://picsum.photos/800/600?random=7',
+        'https://picsum.photos/800/600?random=71',
+        'https://picsum.photos/800/600?random=72',
+        'https://picsum.photos/800/600?random=73'
+      ],
+      features: [
+        'Freely adjustable glass slats',
+        'Good ventilation and light transmission',
+        'Optional hand crank operation',
+        'Tight sealing to prevent wind and rain',
+        'Modern aesthetic design'
+      ],
+      description: 'Louver glass windows are composed of multiple horizontally aligned glass slats that can be opened and closed simultaneously through mechanical devices. The design is simple and lightweight, suitable for areas requiring ventilation and privacy.',
+      applications: [
+        'Bathrooms and kitchens',
+        'Balconies and corridors',
+        'Utility rooms',
+        'Schools and hospitals',
+        'Public restrooms'
+      ],
+      specifications: {
+        'Frame Material': 'Aluminum alloy or PVC',
+        'Glass Type': '5mm tempered glass',
+        'Operating Mode': 'Manual / Hand crank / Electric',
+        'Color Options': 'White, Gray, Black',
+        'Warranty': '5 years'
+      },
+      crossSection: 'https://picsum.photos/400/300?random=107'
+    },
+    {
+      id: 8,
+      name: 'Fixed Windows',
+      category: 'Windows',
+      shortName: 'Fixed Window',
+      mainImage: 'https://picsum.photos/800/600?random=8',
+      images: [
+        'https://picsum.photos/800/600?random=8',
+        'https://picsum.photos/800/600?random=81',
+        'https://picsum.photos/800/600?random=82',
+        'https://picsum.photos/800/600?random=83'
+      ],
+      features: [
+        'No opening mechanism',
+        'Excellent sealing and insulation',
+        'Maximized daylight exposure',
+        'Simple and elegant design',
+        'Customizable sizes and shapes'
+      ],
+      description: 'Fixed windows are windows that cannot be opened and are used to allow light in and provide views. Their superior airtightness provides excellent insulation and security.',
+      applications: [
+        'High-rise buildings',
+        'Commercial facades',
+        'Display windows',
+        'Hotel lobbies',
+        'Office partitions'
+      ],
+      specifications: {
+        'Glass Type': 'Double or triple glazing',
+        'Frame Material': 'Aluminum or uPVC',
+        'Sealing Performance': 'Excellent airtightness',
+        'Color Options': 'Customized',
+        'Warranty': '10 years'
+      },
+      crossSection: 'https://picsum.photos/400/300?random=108'
     }
   ];
+  
 
   const categories = [
     { id: 'windows', name: '铝合金窗', products: products.filter(p => p.category === 'Windows') },
