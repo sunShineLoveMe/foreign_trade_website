@@ -50,11 +50,10 @@ const Navbar = () => {
             <Link 
               to="/" 
               className={`text-2xl font-bold flex flex-col ${
-                isScrolled ? 'text-slate-900' : 'text-black'
+                isScrolled ? 'text-blue-900' : 'text-blue-900'
               }`}
             >
-              <span className="text-base font-medium">SUPERBUILD</span>
-              {/* <span className="text-sm opacity-75">Windows & Doors</span> */}
+              <span className="text-base font-black uppercase" style={{fontFamily: '"Impact", "Arial Black", "Helvetica Neue", sans-serif', fontWeight: 800, letterSpacing: '0.08em', transform: 'skew(-3deg)', textShadow: '2px 2px 4px rgba(30, 58, 138, 0.15)', filter: 'contrast(1.3)', color: '#1e3a8a'}}>SUPERBUILD</span>
             </Link>
           </div>
 

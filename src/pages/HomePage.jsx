@@ -15,7 +15,9 @@ const HomePage = () => {
     '/assets/home/bg-3.png',
     '/assets/home/bg-4.png',
     '/assets/home/bg-5.png',
-    '/assets/home/bg-6.png'
+    '/assets/home/bg-6.png',
+    '/assets/home/bg-7.png',
+    '/assets/home/bg-8.png'
   ];
 
   const handleImageChange = () => {
