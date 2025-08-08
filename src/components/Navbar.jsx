@@ -101,7 +101,7 @@ const Navbar = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
-            <button
+            {/* <button
               onClick={toggleLanguage}
               className={`mr-4 px-3 py-2 text-lg font-medium rounded-md ${
                 isScrolled
@@ -110,7 +110,7 @@ const Navbar = () => {
               }`}
             >
               {i18n.language === 'en' ? '中文' : 'EN'}
-            </button>
+            </button> */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`p-2 rounded-md ${
