@@ -94,7 +94,6 @@ const products = [
       ],
       features: [
         'Superior Sealing',
-        'WERS Certified',
         'Compatible with Operable Types',
         'Maximum daylight',
         'Unobstructed views',
