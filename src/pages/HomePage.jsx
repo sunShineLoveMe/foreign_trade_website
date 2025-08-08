@@ -210,7 +210,7 @@ const HomePage = () => {
             {featuredProducts.map((product) => (
               <div 
                 key={product.id} 
-                className="card-modern overflow-hidden group"
+                className="card-modern overflow-hidden group flex flex-col h-full"
               >
                 <div className="relative overflow-hidden">
                   <ImageWithLoading
@@ -232,15 +232,15 @@ const HomePage = () => {
                   )}
                 </div>
                 
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-heading font-semibold text-slate-900 mb-2">
                     {product.name}
                   </h3>
-                  <p className="text-body text-slate-600 mb-4">
+                  <p className="text-body text-slate-600 mb-4 flex-grow">
                     {product.description}
                   </p>
                   
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2 mb-6">
                     {product.features.slice(0, 3).map((feature, idx) => (
                       <span
                         key={idx}
@@ -251,7 +251,7 @@ const HomePage = () => {
                     ))}
                   </div>
                   
-                  <div className="flex justify-end items-center">
+                  <div className="flex justify-end items-center mt-auto">
                     <Link
                       to={`/product/${product.id}`}
                       className="text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center"
