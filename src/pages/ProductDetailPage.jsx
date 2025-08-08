@@ -444,7 +444,7 @@ const ProductDetailPage = () => {
                       <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-8 items-center">
                         <div className="lg:col-span-6">
                           <img
-                            src="/assets/product_details/sliding-window-1.png"
+                            src={`/assets/product_details/${selectedProduct.category}-1.png`}
                             alt="Product Feature 1 - Premium Construction"
                             className="w-full h-64 object-cover rounded-lg shadow-md"
                           />
@@ -479,7 +479,7 @@ const ProductDetailPage = () => {
                         </div>
                         <div className="lg:col-span-6 lg:order-2">
                           <img
-                            src="/assets/product_details/sliding-window-2.png"
+                            src={`/assets/product_details/${selectedProduct.category}-2.png`}
                             alt="Product Feature 2 - Safety Features"
                             className="w-full h-64 object-cover rounded-lg shadow-md"
                           />
@@ -490,7 +490,7 @@ const ProductDetailPage = () => {
                       <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-8 items-center">
                         <div className="lg:col-span-6">
                           <img
-                            src="/assets/product_details/sliding-window-3.png"
+                            src={`/assets/product_details/${selectedProduct.category}-3.png`}
                             alt="Product Feature 3 - Energy Efficiency"
                             className="w-full h-64 object-cover rounded-lg shadow-md"
                           />
@@ -525,7 +525,7 @@ const ProductDetailPage = () => {
                         </div>
                         <div className="lg:col-span-6 lg:order-2">
                           <img
-                            src="/assets/product_details/sliding-window-4.png"
+                            src={`/assets/product_details/${selectedProduct.category}-4.png`}
                             alt="Product Feature 4 - Custom Options"
                             className="w-full h-64 object-cover rounded-lg shadow-md"
                           />
