@@ -249,7 +249,7 @@ const AboutPage = () => {
             
             <div>
               <ImageWithLoading
-                src="https://picsum.photos/600x400?random=23"
+                src="/assets/capability/mission.png"
                 alt="Company Values"
                 className="w-full rounded-lg shadow-lg"
               />

@@ -87,7 +87,7 @@ const Navbar = () => {
               </Link>
             ))}
             
-            <button
+            {/* <button
               onClick={toggleLanguage}
               className={`ml-4 px-3 py-2 text-lg font-medium rounded-md transition-all duration-200 ${
                 isScrolled
@@ -96,7 +96,7 @@ const Navbar = () => {
               }`}
             >
               {i18n.language === 'en' ? '中文' : 'EN'}
-            </button>
+            </button> */}
           </div>
 
           {/* Mobile menu button */}
