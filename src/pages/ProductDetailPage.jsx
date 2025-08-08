@@ -334,6 +334,18 @@ const ProductDetailPage = () => {
     setSelectedProduct(product || products[0]);
   }, [productId]); // Only depend on productId, products array is stable
 
+  useEffect(() => {
+    // Scroll to top when selected product changes
+    const timer = setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }, 100); // Small delay to ensure DOM is updated
+
+    return () => clearTimeout(timer);
+  }, [selectedProduct]); // Trigger when selectedProduct changes
+
   const handleProductSelect = (product) => {
     setSelectedProduct(product);
   };
