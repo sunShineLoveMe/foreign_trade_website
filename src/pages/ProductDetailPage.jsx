@@ -51,9 +51,9 @@ const products = [
       mainImage: '/assets/products/awning-window.png',
       images: [
         '/assets/products/awning-window.png',
-        'https://picsum.photos/800/600?random=21',
-        'https://picsum.photos/800/600?random=22',
-        'https://picsum.photos/800/600?random=23'
+        '/assets/product_details/awning-window-1.png',
+        '/assets/product_details/awning-window-2.png',
+        '/assets/product_details/awning-window-3.png'
       ],
       features: [
         'Top-hinged design',
@@ -78,7 +78,7 @@ const products = [
         'Screen Options': 'Insect flyscreen included',
         'Warranty': '12 years'
       },
-      crossSection: 'https://picsum.photos/400/300?random=101'
+      crossSection: '/assets/product_details/awning-window-4.png'
     },
     {
       id: 3,
@@ -273,9 +273,9 @@ const products = [
       mainImage: '/assets/products/bi-folding-door.png',
       images: [
         '/assets/products/bi-folding-door.png',
-        'https://picsum.photos/800/600?random=81',
-        'https://picsum.photos/800/600?random=82',
-        'https://picsum.photos/800/600?random=83'
+        '/assets/product_details/bi-folding-door-1.png',
+        '/assets/product_details/bi-folding-door-2.png',
+        '/assets/product_details/bi-folding-door-3.png'
       ],
       features: [
         'Low Threshold',
@@ -300,7 +300,7 @@ const products = [
         'Operation': 'Smooth folding system',
         'Warranty': '12 years'
       },
-      crossSection: 'https://picsum.photos/400/300?random=108'
+      crossSection: '/assets/product_details/bi-folding-door-4.png'
     }
   ];
   
