@@ -409,7 +409,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <Link
               to="/products"
               className="btn-primary inline-flex items-center px-8 py-3 text-lg font-semibold rounded-lg"
@@ -419,7 +419,7 @@ const HomePage = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
