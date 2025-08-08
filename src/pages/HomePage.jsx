@@ -437,12 +437,32 @@ const HomePage = () => {
               <Link
                 to="/contact"
                 className="bg-white text-blue-600 px-8 py-4 text-lg font-semibold rounded-lg hover:bg-slate-50 transition-colors"
+                onClick={() => {
+                  // Local scroll to top as insurance
+                  const timer = setTimeout(() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: 'smooth'
+                    });
+                  }, 50);
+                  return () => clearTimeout(timer);
+                }}
               >
                 Get Free Quote
               </Link>
               <Link
                 to="/certificates"
                 className="border-2 border-white text-white px-8 py-4 text-lg font-semibold rounded-lg hover:bg-white/10 transition-colors"
+                onClick={() => {
+                  // Local scroll to top as insurance
+                  const timer = setTimeout(() => {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: 'smooth'
+                    });
+                  }, 50);
+                  return () => clearTimeout(timer);
+                }}
               >
                 View Certifications
               </Link>

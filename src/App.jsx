@@ -4,6 +4,7 @@ import { I18nextProvider } from 'react-i18next';
 import { AnimatePresence } from 'framer-motion';
 import i18n from './i18n';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import ProductsPage from './pages/ProductsPage';
 import HurricaneWindowsPage from './pages/HurricaneWindowsPage';
@@ -68,6 +69,7 @@ function App() {
   return (
     <I18nextProvider i18n={i18n}>
       <Router>
+        <ScrollToTop />
         <div className="min-h-screen bg-gray-50">
           <Navbar />
           <AnimatedRoutes />
