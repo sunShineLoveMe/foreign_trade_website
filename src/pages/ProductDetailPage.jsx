@@ -444,7 +444,7 @@ const ProductDetailPage = () => {
                       <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-8 items-center">
                         <div className="lg:col-span-6">
                           <img
-                            src="https://picsum.photos/600/400?random=101"
+                            src="/assets/product_details/sliding-window-1.png"
                             alt="Product Feature 1 - Premium Construction"
                             className="w-full h-64 object-cover rounded-lg shadow-md"
                           />
@@ -479,7 +479,7 @@ const ProductDetailPage = () => {
                         </div>
                         <div className="lg:col-span-6 lg:order-2">
                           <img
-                            src="https://picsum.photos/600/400?random=102"
+                            src="/assets/product_details/sliding-window-2.png"
                             alt="Product Feature 2 - Safety Features"
                             className="w-full h-64 object-cover rounded-lg shadow-md"
                           />
@@ -490,7 +490,7 @@ const ProductDetailPage = () => {
                       <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-8 items-center">
                         <div className="lg:col-span-6">
                           <img
-                            src="https://picsum.photos/600/400?random=103"
+                            src="/assets/product_details/sliding-window-3.png"
                             alt="Product Feature 3 - Energy Efficiency"
                             className="w-full h-64 object-cover rounded-lg shadow-md"
                           />
@@ -525,7 +525,7 @@ const ProductDetailPage = () => {
                         </div>
                         <div className="lg:col-span-6 lg:order-2">
                           <img
-                            src="https://picsum.photos/600/400?random=104"
+                            src="/assets/product_details/sliding-window-4.png"
                             alt="Product Feature 4 - Custom Options"
                             className="w-full h-64 object-cover rounded-lg shadow-md"
                           />
@@ -547,7 +547,7 @@ const ProductDetailPage = () => {
                     </div>
 
                     {/* Cross Section */}
-                    <div className="mb-8">
+                    {/* <div className="mb-8">
                       <h2 className="text-xl font-bold text-slate-900 mb-4">Cross Section View</h2>
                       <div className="bg-slate-50 rounded-lg p-6">
                         <img
@@ -559,7 +559,7 @@ const ProductDetailPage = () => {
                           Detailed cross-sectional view showing internal construction and material composition
                         </p>
                       </div>
-                    </div>
+                    </div> */}
 
                     {/* CTA */}
                     <div className="w-full">
