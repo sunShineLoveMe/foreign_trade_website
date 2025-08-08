@@ -22,6 +22,16 @@ const Navbar = () => {
     i18n.changeLanguage(newLang);
   };
 
+  const handleScrollToTop = () => {
+    const timer = setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }, 100);
+    return () => clearTimeout(timer);
+  };
+
   const navItems = [
     { path: '/', key: 'home' },
     { path: '/products', key: 'products' },
@@ -50,6 +60,7 @@ const Navbar = () => {
             <Link 
               to="/" 
               className={`text-2xl font-bold flex flex-col`}
+              onClick={handleScrollToTop}
             >
               <span className="text-base font-black uppercase" style={{fontFamily: '"Impact", "Arial Black", "Helvetica Neue", sans-serif', fontWeight: 800, letterSpacing: '0.08em', transform: 'skew(-3deg)', backgroundImage: 'linear-gradient(90deg, #3D1766, #6B46C1)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', textShadow: '0 0 0 transparent'}}>SUPERBUILD</span>
             </Link>
@@ -70,6 +81,7 @@ const Navbar = () => {
                       ? 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                       : 'text-black hover:text-slate-900 hover:bg-gray-100'
                 }`}
+                onClick={handleScrollToTop}
               >
                 {t(`nav.${item.key}`)}
               </Link>
@@ -137,7 +149,10 @@ const Navbar = () => {
                     ? 'text-blue-600 bg-blue-50'
                     : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
                 }`}
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  handleScrollToTop();
+                }}
               >
                 {t(`nav.${item.key}`)}
               </Link>
