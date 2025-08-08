@@ -68,35 +68,30 @@ const HomePage = () => {
   const featuredProducts = [
     {
       id: 1,
-      name: 'Premium Aluminum Sliding Windows',
-      category: 'Windows',
-      description: 'Double-glazed energy-efficient windows with advanced locking system',
-      features: ['Energy Efficient', 'Security Locks', 'Weather Resistant'],
-      image: 'https://picsum.photos/600/400?random=1',
+      name: 'Sliding Window',
+      category: 'sliding-window',
+      description: 'Space-saving and weather-tight windows perfect for luxury homes and commercial use.',
+      features: ['Thermal or Non-Thermal Break Options', 'Low-E Double/Triple Glazing', 'Multi-Point Locking System'],
+      image: '/assets/products/sliding-window.png',
+      badge: 'Durable'
     },
     {
-      id: 2,
-      name: 'Security Screen Doors',
-      category: 'Security',
-      description: 'Heavy-duty security doors that don\'t compromise on style',
-      features: ['316 Marine Grade', 'Triple Lock System', 'Custom Colors'],
-      image: 'https://picsum.photos/600/400?random=2',
+      id: 5,
+      name: 'Stacker Door',
+      category: 'stacker-door',
+      description: 'Multi-panel sliding doors that expand your indoor-outdoor living space.',
+      features: ['AS2047 Certified', 'Smooth Sliding', 'Triple-Track Option'],
+      image: '/assets/products/stacker-door.png',
+      badge: 'Expansive'
     },
     {
-      id: 3,
-      name: 'Double Glazed Awning Windows',
-      category: 'Windows',
-      description: 'Perfect ventilation with superior insulation properties',
-      features: ['Tilt & Turn', 'Sound Insulation', 'Child Safety'],
-      image: 'https://picsum.photos/600/400?random=3',
-    },
-    {
-      id: 4,
-      name: 'French Patio Doors',
-      category: 'Doors',
-      description: 'Elegant French doors for seamless indoor-outdoor living',
-      features: ['Wide Opening', 'Security Glass', 'Multi-point Locking'],
-      image: 'https://picsum.photos/600/400?random=4',
+      id: 7,
+      name: 'Hinged Door',
+      category: 'hinged-door',
+      description: 'High-performance hinged doors with elegant appearance and strong insulation.',
+      features: ['Seamless Opening', 'Insulated Panel Options', 'Multi-point Locking'],
+      image: '/assets/products/hinged-door.png',
+      badge: 'Elegant'
     },
   ];
 
@@ -211,7 +206,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="product-grid">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProducts.map((product) => (
               <div 
                 key={product.id} 
@@ -225,9 +220,16 @@ const HomePage = () => {
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-blue-600 text-white px-3 py-1 text-sm font-medium rounded-full">
-                      {product.category}
+                      {product.category.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}
                     </span>
                   </div>
+                  {product.badge && (
+                    <div className="absolute top-4 right-4">
+                      <span className="bg-red-500 text-white px-2 py-1 text-xs font-bold rounded-full">
+                        {product.badge}
+                      </span>
+                    </div>
+                  )}
                 </div>
                 
                 <div className="p-6">
@@ -239,7 +241,7 @@ const HomePage = () => {
                   </p>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {product.features.map((feature, idx) => (
+                    {product.features.slice(0, 3).map((feature, idx) => (
                       <span
                         key={idx}
                         className="bg-slate-100 text-slate-700 text-xs px-2 py-1 rounded"
@@ -251,7 +253,7 @@ const HomePage = () => {
                   
                   <div className="flex justify-end items-center">
                     <Link
-                      to="/products"
+                      to={`/product/${product.id}`}
                       className="text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center"
                     >
                       {t('products.learnMore')}
