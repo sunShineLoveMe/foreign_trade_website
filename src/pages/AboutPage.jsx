@@ -79,22 +79,22 @@ const AboutPage = () => {
     {
       title: 'Advanced Manufacturing',
       description: 'State-of-the-art facilities with precision engineering capabilities',
-      image: 'https://source.unsplash.com/600x400/?manufacturing',
+      image: '/assets/capability/contract-1.png',
     },
     {
       title: 'Quality Control',
       description: 'Rigorous testing standards ensuring every product meets Australian standards',
-      image: 'https://source.unsplash.com/600x400/?quality-control',
+      image: '/assets/capability/contract-2.png',
     },
     {
       title: 'Custom Solutions',
       description: 'Tailored window and door solutions for unique architectural requirements',
-      image: 'https://source.unsplash.com/600x400/?custom-design',
+      image: '/assets/capability/contract-3.png',
     },
     {
       title: 'Nationwide Service',
       description: 'Professional installation and support across all Australian states',
-      image: 'https://source.unsplash.com/600x400/?service-team',
+      image: '/assets/capability/contract-4.png',
     },
   ];
 

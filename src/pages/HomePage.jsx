@@ -330,6 +330,99 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Product Types Section */}
+      <section className="section-padding bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-heading-xl font-bold text-slate-900 mb-4">
+              Explore Our Product Types
+            </h2>
+            <p className="text-body-lg text-slate-600 max-w-2xl mx-auto">
+              Premium windows and doors designed for every architectural style and functional need
+            </p>
+          </div>
+
+          <div className="max-w-7xl mx-auto space-y-8">
+            {/* Window Types Card */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden group border border-slate-200">
+              <div className="relative overflow-hidden">
+                {/* <ImageWithLoading
+                  src="/assets/types/window.png"
+                  alt="Premium Windows Collection"
+                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                /> */}
+                <ImageWithLoading
+                  src="/assets/types/window.png"
+                  alt="Premium Windows Collection"
+                  className="w-full object-contain bg-white group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <h3 className="text-3xl font-bold text-white mb-2">Windows Collection</h3>
+                  <p className="text-white/90 text-lg">Energy-efficient windows for every style</p>
+                </div>
+              </div>
+              <div className="p-8">
+                <p className="text-body text-slate-600 mb-6">
+                  Discover our comprehensive range of premium windows, from sliding and awning to bi-fold and fixed designs. Each window is engineered for superior energy efficiency, security, and durability in Australian conditions.
+                </p>
+                <Link
+                  to="/products?category=windows"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold"
+                >
+                  Explore Windows
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Door Types Card */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden group border border-slate-200">
+              <div className="relative overflow-hidden">
+              <ImageWithLoading
+                  src="/assets/types/door.png"
+                  alt="Premium Windows Collection"
+                  className="w-full object-contain bg-white group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <h3 className="text-3xl font-bold text-white mb-2">Doors Collection</h3>
+                  <p className="text-white/90 text-lg">Secure and stylish entry solutions</p>
+                </div>
+              </div>
+              <div className="p-8">
+                <p className="text-body text-slate-600 mb-6">
+                  Experience our premium door collection featuring sliding, stacker, hinged, and bi-fold options. Each door combines security, style, and functionality to create seamless indoor-outdoor living experiences.
+                </p>
+                <Link
+                  to="/products?category=doors"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold"
+                >
+                  Explore Doors
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              to="/products"
+              className="btn-primary inline-flex items-center px-8 py-3 text-lg font-semibold rounded-lg"
+            >
+              Browse All Products
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-blue-600 to-blue-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
