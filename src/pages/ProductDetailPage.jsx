@@ -232,9 +232,11 @@ const products = [
       name: 'Hinged Door',
       category: 'hinged-door',
       shortName: 'Hinged Door',
-      mainImage: '/assets/products/hinged-door.png',
+      // mainImage: '/assets/products/hinged-door.png',
+      mainImage: '/assets/products/bi-folding-door.png',
       images: [
-        '/assets/products/hinged-door.png',
+        // '/assets/products/hinged-door.png',
+        '/assets/products/bi-folding-door.png',
         'https://picsum.photos/800/600?random=71',
         'https://picsum.photos/800/600?random=72',
         'https://picsum.photos/800/600?random=73'
@@ -269,9 +271,11 @@ const products = [
       name: 'Bi-folding Door',
       category: 'bi-folding-door',
       shortName: 'Bi-folding Door',
-      mainImage: '/assets/products/bi-folding-door.png',
+      // mainImage: '/assets/products/bi-folding-door.png',
+      mainImage: '/assets/products/hinged-door.png',
       images: [
-        '/assets/products/bi-folding-door.png',
+        // '/assets/products/bi-folding-door.png',
+        '/assets/products/hinged-door.png',
         '/assets/product_details/bi-folding-door-1.png',
         '/assets/product_details/bi-folding-door-2.png',
         '/assets/product_details/bi-folding-door-3.png'
