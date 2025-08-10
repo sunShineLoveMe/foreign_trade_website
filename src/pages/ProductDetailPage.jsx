@@ -488,7 +488,7 @@ const ProductDetailPage = () => {
                           </p>
                           <ul className="text-sm text-slate-600 space-y-1">
                             <li>• Multi-point security locks</li>
-                            <li>• Child safety mechanisms</li>
+                            <li>• Impact-resistant glass protection</li>
                             <li>• Emergency release options</li>
                           </ul>
                         </div>
