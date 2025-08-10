@@ -115,7 +115,8 @@ const ProductsPage = () => {
         height: '2000-2400mm',
         panels: '1-2 Panels'
       },
-      image: '/assets/products/hinged-door.png',
+      // image: '/assets/products/hinged-door.png',
+      image: '/assets/products/bi-folding-door.png',
       badge: 'Elegant'
     },
     {
@@ -129,7 +130,8 @@ const ProductsPage = () => {
         panels: '2-7 Panels',
         threshold: 'Low Profile'
       },
-      image: '/assets/products/bi-folding-door.png',
+      // image: '/assets/products/bi-folding-door.png',
+      image: '/assets/products/hinged-door.png',
       badge: 'Space Saver'
     }
   ]
