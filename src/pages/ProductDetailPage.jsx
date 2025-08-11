@@ -314,13 +314,13 @@ const products = [
           layout: 'right-image'
         },
         {
-          title: 'Durable Tempered Glass',
-          description: '5mm tempered glass slats offer superior strength and safety. UV-resistant coating protects against sun damage and maintains clarity over time.',
+          title: 'Ventilation & Natural Lighting',
+          description: 'Adjustable glass louvre windows ensure excellent airflow while maintaining ample natural light indoors.',
           image: '/assets/product_details/glass-louvre-window-3.png',
           points: [
-            'Tempered safety glass',
-            'UV protection coating',
-            'Long-term durability'
+            'Excellent air circulation',
+            'Ample natural lighting',
+            'Energy-efficient ventilation'
           ],
           layout: 'left-image'
         },
