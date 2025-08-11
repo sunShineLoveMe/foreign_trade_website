@@ -41,7 +41,53 @@ const products = [
         'Color Options': 'Custom colors available',
         'Warranty': '10 years'
       },
-      crossSection: 'https://picsum.photos/400/300?random=100'
+      crossSection: 'https://picsum.photos/400/300?random=100',
+      featureSections: [
+        {
+          title: 'Premium Construction Quality',
+          description: 'High-grade aluminum frame construction ensures durability and longevity. Precision engineering provides smooth operation and perfect sealing.',
+          image: '/assets/product_details/sliding-window-1.png',
+          points: [
+            'Reinforced aluminum profiles',
+            'Weather-resistant finish',
+            'Precision manufacturing'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Advanced Safety Features',
+          description: 'Multi-point locking system with high-security components. Child-safe design with emergency release mechanisms.',
+          image: '/assets/product_details/sliding-window-2.png',
+          points: [
+            'Multi-point security locks',
+            'Impact-resistant glass protection',
+            'Emergency release options'
+          ],
+          layout: 'right-image'
+        },
+        {
+          title: 'Energy Efficient Design',
+          description: 'Double or triple glazing options with thermal break technology. Reduces energy costs and maintains comfortable indoor temperatures.',
+          image: '/assets/product_details/sliding-window-3.png',
+          points: [
+            'Thermal break technology',
+            'Double/triple glazing',
+            'Energy cost reduction'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Customizable Options',
+          description: 'Wide range of colors, finishes, and hardware options. Custom sizes available to fit any architectural requirement.',
+          image: '/assets/product_details/sliding-window-4.png',
+          points: [
+            'Multiple color options',
+            'Custom sizing available',
+            'Various hardware choices'
+          ],
+          layout: 'right-image'
+        }
+      ]
     },
     {
       id: 2,
@@ -78,7 +124,53 @@ const products = [
         'Screen Options': 'Insect flyscreen included',
         'Warranty': '12 years'
       },
-      crossSection: '/assets/product_details/awning-window-4.png'
+      crossSection: '/assets/product_details/awning-window-4.png',
+      featureSections: [
+        {
+          title: 'Smart Ventilation Control',
+          description: 'Top-hinged design allows fresh air circulation even during light rain. Perfect for maintaining indoor air quality while providing weather protection.',
+          image: '/assets/product_details/awning-window-1.png',
+          points: [
+            'Rain-resistant ventilation',
+            'Adjustable opening angles',
+            'Weather-tight sealing'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Enhanced Security System',
+          description: 'Multi-point locking mechanism with reinforced hardware ensures maximum security. Child-safe operation with easy-to-reach handles.',
+          image: '/assets/product_details/awning-window-2.png',
+          points: [
+            'Multi-point locking system',
+            'Reinforced frame structure',
+            'Child-safe operation'
+          ],
+          layout: 'right-image'
+        },
+        {
+          title: 'Superior Energy Performance',
+          description: 'Advanced thermal break technology combined with Low-E glass options provides exceptional insulation and reduces energy consumption.',
+          image: '/assets/product_details/awning-window-3.png',
+          points: [
+            'Thermal break aluminum',
+            'Low-E double glazing',
+            'Energy cost savings'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Versatile Installation Options',
+          description: 'Flexible sizing and configuration options make awning windows suitable for various architectural styles and building requirements.',
+          image: '/assets/product_details/awning-window-4.png',
+          points: [
+            'Custom size availability',
+            'Multiple frame colors',
+            'Easy installation process'
+          ],
+          layout: 'right-image'
+        }
+      ]
     },
     {
       id: 3,
@@ -114,7 +206,53 @@ const products = [
         'Certification': 'WERS Certified',
         'Warranty': '10 years'
       },
-      crossSection: 'https://picsum.photos/400/300?random=102'
+      crossSection: 'https://picsum.photos/400/300?random=102',
+      featureSections: [
+        {
+          title: 'Panoramic Views',
+          description: 'Fixed windows provide unobstructed panoramic views and maximum natural light penetration. Perfect for showcasing beautiful landscapes and architectural features.',
+          image: '/assets/product_details/fixed-window-1.png',
+          points: [
+            'Maximum glass area',
+            'Uninterrupted sightlines',
+            'Enhanced natural lighting'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Superior Weather Sealing',
+          description: 'Advanced sealing technology ensures complete weather protection. Fixed design eliminates air leakage points for superior energy efficiency.',
+          image: '/assets/product_details/fixed-window-2.png',
+          points: [
+            'Triple weather seals',
+            'Zero air infiltration',
+            'Superior thermal performance'
+          ],
+          layout: 'right-image'
+        },
+        {
+          title: 'Architectural Integration',
+          description: 'Seamlessly integrates with operable window types to create comprehensive window solutions. Compatible with various architectural styles and building systems.',
+          image: '/assets/product_details/fixed-window-3.png',
+          points: [
+            'Universal compatibility',
+            'Flexible sizing options',
+            'Architectural harmony'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Structural Excellence',
+          description: 'Engineered for structural integrity in high-rise applications. Certified performance ratings ensure reliability in demanding installations.',
+          image: '/assets/product_details/fixed-window-4.png',
+          points: [
+            'High-rise certified',
+            'Structural reinforcement',
+            'WERS performance rated'
+          ],
+          layout: 'right-image'
+        }
+      ]
     },
     {
       id: 4,
@@ -151,7 +289,53 @@ const products = [
         'UV Protection': 'Weather resistant coating',
         'Warranty': '5 years'
       },
-      crossSection: 'https://picsum.photos/400/300?random=103'
+      crossSection: 'https://picsum.photos/400/300?random=103',
+      featureSections: [
+        {
+          title: 'Precision Airflow Control',
+          description: 'Adjustable glass louvers allow precise control over ventilation and natural light. Tilt slats to direct airflow while maintaining privacy and weather protection.',
+          image: '/assets/product_details/glass-louvre-window-1.png',
+          points: [
+            '360-degree slat rotation',
+            'Precise ventilation control',
+            'Weather-resistant operation'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Privacy & Light Management',
+          description: 'Strategic louver positioning provides privacy without sacrificing natural light. Perfect for bathrooms, bedrooms, and street-facing installations.',
+          image: '/assets/product_details/glass-louvre-window-2.png',
+          points: [
+            'Adjustable privacy levels',
+            'Glare reduction capability',
+            'Daylight optimization'
+          ],
+          layout: 'right-image'
+        },
+        {
+          title: 'Durable Tempered Glass',
+          description: '5mm tempered glass slats offer superior strength and safety. UV-resistant coating protects against sun damage and maintains clarity over time.',
+          image: '/assets/product_details/glass-louvre-window-3.png',
+          points: [
+            'Tempered safety glass',
+            'UV protection coating',
+            'Long-term durability'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Multiple Operation Options',
+          description: 'Choose from manual, hand crank, or electric operation systems. Each offers smooth, reliable control with minimal maintenance requirements.',
+          image: '/assets/product_details/glass-louvre-window-4.png',
+          points: [
+            'Manual lever operation',
+            'Hand crank mechanism',
+            'Electric motor option'
+          ],
+          layout: 'right-image'
+        }
+      ]
     },
     {
       id: 5,
@@ -188,7 +372,53 @@ const products = [
         'Width Range': 'Custom widths',
         'Warranty': '12 years'
       },
-      crossSection: 'https://picsum.photos/400/300?random=104'
+      crossSection: 'https://picsum.photos/400/300?random=104',
+      featureSections: [
+        {
+          title: 'Seamless Indoor-Outdoor Living',
+          description: 'Multi-panel stacking system creates expansive openings that blur the boundary between indoor and outdoor spaces. Perfect for entertaining and maximizing living areas.',
+          image: '/assets/product_details/stacker-door-1.png',
+          points: [
+            'Wide opening capability',
+            'Smooth stacking operation',
+            'Enhanced entertaining space'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'AS2047 Certified Performance',
+          description: 'Meets rigorous Australian standards for security, weather resistance, and durability. Certified performance ensures reliability in harsh Australian conditions.',
+          image: '/assets/product_details/stacker-door-2.png',
+          points: [
+            'Australian standard compliance',
+            'Security certification',
+            'Weather resistance tested'
+          ],
+          layout: 'right-image'
+        },
+        {
+          title: 'Flexible Panel Configuration',
+          description: 'Configurable from 3 to 6 panels with triple-track options. Custom widths accommodate various architectural requirements and opening sizes.',
+          image: '/assets/product_details/stacker-door-3.png',
+          points: [
+            '3-6 panel options',
+            'Triple-track system',
+            'Custom width solutions'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Advanced Sliding Mechanism',
+          description: 'Precision-engineered rollers and tracks ensure smooth, effortless operation. Heavy-duty hardware supports large glass panels with minimal maintenance.',
+          image: '/assets/product_details/stacker-door-4.png',
+          points: [
+            'Precision roller system',
+            'Effortless operation',
+            'Low maintenance design'
+          ],
+          layout: 'right-image'
+        }
+      ]
     },
     {
       id: 6,
@@ -225,7 +455,53 @@ const products = [
         'Design': 'Custom designs available',
         'Warranty': '15 years'
       },
-      crossSection: 'https://picsum.photos/400/300?random=105'
+      crossSection: 'https://picsum.photos/400/300?random=105',
+      featureSections: [
+        {
+          title: 'Australian Standard Compliance',
+          description: 'AS2047 certified to meet stringent Australian building standards for security, weather resistance, and durability in harsh climate conditions.',
+          image: '/assets/product_details/sliding-door-1.png',
+          points: [
+            'AS2047 certification',
+            'Security compliance',
+            'Weather resistance'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Premium Security Screens',
+          description: 'High-quality stainless steel mesh screens provide security without compromising views. Corrosion-resistant material perfect for coastal environments.',
+          image: '/assets/product_details/sliding-door-2.png',
+          points: [
+            'Stainless steel mesh',
+            'Corrosion resistance',
+            'Unobstructed views'
+          ],
+          layout: 'right-image'
+        },
+        {
+          title: 'Space-Saving Design',
+          description: 'Horizontal sliding operation maximizes usable floor space. Ideal for areas where swing doors would be impractical or obstructive.',
+          image: '/assets/product_details/sliding-door-3.png',
+          points: [
+            'Horizontal sliding',
+            'Space maximization',
+            'Unobstructed walkways'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Custom Design Solutions',
+          description: 'Flexible sizing and design options accommodate various architectural requirements. Custom colors and hardware choices available.',
+          image: '/assets/product_details/sliding-door-4.png',
+          points: [
+            'Custom sizing',
+            'Color options',
+            'Hardware choices'
+          ],
+          layout: 'right-image'
+        }
+      ]
     },
     {
       id: 7,
@@ -264,7 +540,53 @@ const products = [
         'Hardware': 'Multi-point locking',
         'Warranty': '15 years'
       },
-      crossSection: 'https://picsum.photos/400/300?random=107'
+      crossSection: 'https://picsum.photos/400/300?random=107',
+      featureSections: [
+        {
+          title: 'Elegant Entry Solutions',
+          description: 'Classic hinged design offers timeless elegance and smooth operation. Perfect for main entrances where traditional styling and reliable performance are essential.',
+          image: '/assets/product_details/hinged-door-1.png',
+          points: [
+            'Traditional styling',
+            'Smooth hinge operation',
+            'Premium entrance appeal'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Superior Insulation Performance',
+          description: 'Insulated panel options provide exceptional thermal and acoustic performance. Multi-chamber profiles and advanced sealing reduce energy loss and noise transmission.',
+          image: '/assets/product_details/hinged-door-2.png',
+          points: [
+            'Thermal insulation panels',
+            'Acoustic dampening',
+            'Energy efficiency'
+          ],
+          layout: 'right-image'
+        },
+        {
+          title: 'Advanced Security Hardware',
+          description: 'Multi-point locking system engages at multiple points along the frame. Premium hardware ensures reliable security and smooth operation for years.',
+          image: '/assets/product_details/hinged-door-3.png',
+          points: [
+            'Multi-point security locks',
+            'Premium hardware finish',
+            'Long-lasting reliability'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Flexible Configuration Options',
+          description: 'Available in single or double panel configurations with custom sizing. Accommodates various architectural requirements and opening sizes.',
+          image: '/assets/product_details/hinged-door-4.png',
+          points: [
+            'Single/double panel',
+            'Custom dimensions',
+            'Architectural flexibility'
+          ],
+          layout: 'right-image'
+        }
+      ]
     },
     {
       id: 8,
@@ -303,7 +625,53 @@ const products = [
         'Operation': 'Smooth folding system',
         'Warranty': '12 years'
       },
-      crossSection: '/assets/product_details/bi-folding-door-4.png'
+      crossSection: '/assets/product_details/bi-folding-door-4.png',
+      featureSections: [
+        {
+          title: 'Expansive Opening System',
+          description: 'Bi-folding panels create dramatic wide openings that seamlessly connect indoor and outdoor living spaces. Perfect for entertaining and maximizing natural light.',
+          image: '/assets/product_details/bi-folding-door-1.png',
+          points: [
+            '2-7 panel configurations',
+            'Wide aperture capability',
+            'Seamless indoor-outdoor flow'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Low Threshold Accessibility',
+          description: 'Ultra-low threshold design provides seamless transition between indoor and outdoor areas. Ideal for accessibility requirements and contemporary aesthetics.',
+          image: '/assets/product_details/bi-folding-door-2.png',
+          points: [
+            'Low profile threshold',
+            'Step-free transition',
+            'Universal accessibility'
+          ],
+          layout: 'right-image'
+        },
+        {
+          title: 'Hidden Roller Technology',
+          description: 'Precision-engineered hidden rollers provide smooth, effortless folding operation. Stainless steel components ensure long-term reliability and minimal maintenance.',
+          image: '/assets/product_details/bi-folding-door-3.png',
+          points: [
+            'Hidden roller system',
+            'Stainless steel hardware',
+            'Smooth operation'
+          ],
+          layout: 'left-image'
+        },
+        {
+          title: 'Contemporary Design Excellence',
+          description: 'Slim sightlines and modern aesthetics complement contemporary architecture. Clean, minimalist appearance enhances the visual appeal of any space.',
+          image: '/assets/product_details/bi-folding-door-4.png',
+          points: [
+            'Slim sightline design',
+            'Contemporary aesthetics',
+            'Minimalist appearance'
+          ],
+          layout: 'right-image'
+        }
+      ]
     }
   ];
   
@@ -451,101 +819,56 @@ const ProductDetailPage = () => {
                       </div>
                     </div>
 
-                    {/* Product Showcase - Alternating Image-Text Layout */}
+                    {/* Product Showcase - Data-Driven Feature Sections */}
                     <div className="mb-8">
                       <h2 className="text-xl font-bold text-slate-900 mb-6">Product Showcase</h2>
                       
-                      {/* Row 1: Left Image, Right Text */}
-                      <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-8 items-center">
-                        <div className="lg:col-span-6">
-                          <img
-                            src={`/assets/product_details/${selectedProduct.category}-1.png`}
-                            alt="Product Feature 1 - Premium Construction"
-                            className="w-full h-64 object-cover rounded-lg shadow-md"
-                          />
+                      {selectedProduct.featureSections && selectedProduct.featureSections.map((section, index) => (
+                        <div 
+                          key={index} 
+                          className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-8 items-center"
+                        >
+                          {section.layout === 'left-image' ? (
+                            <>
+                              <div className="lg:col-span-6">
+                                <img
+                                  src={section.image}
+                                  alt={section.title}
+                                  className="w-full h-64 object-cover rounded-lg shadow-md"
+                                />
+                              </div>
+                              <div className="lg:col-span-4">
+                                <h3 className="text-lg font-semibold text-slate-900 mb-2">{section.title}</h3>
+                                <p className="text-slate-600 mb-3">{section.description}</p>
+                                <ul className="text-sm text-slate-600 space-y-1">
+                                  {section.points.map((point, pointIndex) => (
+                                    <li key={pointIndex}>• {point}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                            </>
+                          ) : (
+                            <>
+                              <div className="lg:col-span-4 lg:order-1">
+                                <h3 className="text-lg font-semibold text-slate-900 mb-2">{section.title}</h3>
+                                <p className="text-slate-600 mb-3">{section.description}</p>
+                                <ul className="text-sm text-slate-600 space-y-1">
+                                  {section.points.map((point, pointIndex) => (
+                                    <li key={pointIndex}>• {point}</li>
+                                  ))}
+                                </ul>
+                              </div>
+                              <div className="lg:col-span-6 lg:order-2">
+                                <img
+                                  src={section.image}
+                                  alt={section.title}
+                                  className="w-full h-64 object-cover rounded-lg shadow-md"
+                                />
+                              </div>
+                            </>
+                          )}
                         </div>
-                        <div className="lg:col-span-4">
-                          <h3 className="text-lg font-semibold text-slate-900 mb-2">Premium Construction Quality</h3>
-                          <p className="text-slate-600 mb-3">
-                            High-grade aluminum frame construction ensures durability and longevity. 
-                            Precision engineering provides smooth operation and perfect sealing.
-                          </p>
-                          <ul className="text-sm text-slate-600 space-y-1">
-                            <li>• Reinforced aluminum profiles</li>
-                            <li>• Weather-resistant finish</li>
-                            <li>• Precision manufacturing</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      {/* Row 2: Left Text, Right Image */}
-                      <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-8 items-center">
-                        <div className="lg:col-span-4 lg:order-1">
-                          <h3 className="text-lg font-semibold text-slate-900 mb-2">Advanced Safety Features</h3>
-                          <p className="text-slate-600 mb-3">
-                            Multi-point locking system with high-security components. 
-                            Child-safe design with emergency release mechanisms.
-                          </p>
-                          <ul className="text-sm text-slate-600 space-y-1">
-                            <li>• Multi-point security locks</li>
-                            <li>• Impact-resistant glass protection</li>
-                            <li>• Emergency release options</li>
-                          </ul>
-                        </div>
-                        <div className="lg:col-span-6 lg:order-2">
-                          <img
-                            src={`/assets/product_details/${selectedProduct.category}-2.png`}
-                            alt="Product Feature 2 - Safety Features"
-                            className="w-full h-64 object-cover rounded-lg shadow-md"
-                          />
-                        </div>
-                      </div>
-
-                      {/* Row 3: Left Image, Right Text */}
-                      <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 mb-8 items-center">
-                        <div className="lg:col-span-6">
-                          <img
-                            src={`/assets/product_details/${selectedProduct.category}-3.png`}
-                            alt="Product Feature 3 - Energy Efficiency"
-                            className="w-full h-64 object-cover rounded-lg shadow-md"
-                          />
-                        </div>
-                        <div className="lg:col-span-4">
-                          <h3 className="text-lg font-semibold text-slate-900 mb-2">Energy Efficient Design</h3>
-                          <p className="text-slate-600 mb-3">
-                            Double or triple glazing options with thermal break technology. 
-                            Reduces energy costs and maintains comfortable indoor temperatures.
-                          </p>
-                          <ul className="text-sm text-slate-600 space-y-1">
-                            <li>• Thermal break technology</li>
-                            <li>• Double/triple glazing</li>
-                            <li>• Energy cost reduction</li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      {/* Row 4: Left Text, Right Image */}
-                      <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 items-center">
-                        <div className="lg:col-span-4 lg:order-1">
-                          <h3 className="text-lg font-semibold text-slate-900 mb-2">Customizable Options</h3>
-                          <p className="text-slate-600 mb-3">
-                            Wide range of colors, finishes, and hardware options. 
-                            Custom sizes available to fit any architectural requirement.
-                          </p>
-                          <ul className="text-sm text-slate-600 space-y-1">
-                            <li>• Multiple color options</li>
-                            <li>• Custom sizing available</li>
-                            <li>• Various hardware choices</li>
-                          </ul>
-                        </div>
-                        <div className="lg:col-span-6 lg:order-2">
-                          <img
-                            src={`/assets/product_details/${selectedProduct.category}-4.png`}
-                            alt="Product Feature 4 - Custom Options"
-                            className="w-full h-64 object-cover rounded-lg shadow-md"
-                          />
-                        </div>
-                      </div>
+                      ))}
                     </div>
 
                     {/* Specifications */}
