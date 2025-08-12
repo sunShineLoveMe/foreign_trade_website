@@ -90,7 +90,7 @@ const HomePage = () => {
       category: 'hinged-door',
       description: 'High-performance hinged doors with elegant appearance and strong insulation.',
       features: ['Seamless Opening', 'Insulated Panel Options', 'Multi-point Locking'],
-      image: '/assets/products/hinged-door.png',
+      image: '/assets/products/bi-folding-door.png',
       badge: 'Elegant'
     },
   ];
