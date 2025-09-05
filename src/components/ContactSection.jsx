@@ -5,7 +5,7 @@ const ContactSection = ({
   title = "Get In Touch", 
   subtitle = "Ready to discuss your project? Our experts are here to help.",
   contactInfo = {
-    address: "123 Innovation Drive, Sydney, NSW 2000, Australia",
+    address: "56 cowpwer street , Sydney, NSW 2032, Australia",
     phone: "+86 159 2189 8978",
     email: "ibuildhouse7@gmail.com",
     businessHours: "Mon-Fri: 8:00 AM - 6:00 PM",
