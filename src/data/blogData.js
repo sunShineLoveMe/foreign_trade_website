@@ -4,7 +4,7 @@ export const blogPosts = [
         slug: 'advantages-of-aluminium-windows-and-doors',
         title: 'Top 5 Advantages of Aluminium Windows and Doors for Australian Homes',
         excerpt: 'Discover why aluminium is the preferred material for windows and doors in modern Australian architecture, from durability to energy efficiency.',
-        date: '2023-10-15',
+        date: '2025-10-20',
         featuredImage: 'https://images.unsplash.com/photo-1503708928676-1cb796a0891e?q=80&w=1000&auto=format&fit=crop',
         author: 'Superbuild Expert',
         content: `
