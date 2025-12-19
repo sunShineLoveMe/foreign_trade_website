@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { blogPosts } from '../data/blogData';
+import BlogArticleLayout from '../components/BlogArticleLayout';
 
 const BlogPostPage = () => {
     const { slug } = useParams();
@@ -14,7 +14,6 @@ const BlogPostPage = () => {
             return;
         }
         document.title = post.metaTitle || `${post.title} | Superbuild`;
-        // Update meta description (basic approach for client-side)
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
             metaDescription.setAttribute('content', post.metaDescription);
@@ -25,97 +24,101 @@ const BlogPostPage = () => {
     if (!post) return null;
 
     return (
-        <main className="pt-24 pb-16 bg-white min-h-screen">
-            <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Header */}
-                <header className="mb-12">
+        <BlogArticleLayout>
+            <article>
+                {/* Header Section */}
+                <header className="mb-16">
                     <Link
                         to="/blog"
-                        className="inline-flex items-center text-blue-600 font-semibold mb-6 hover:text-blue-700"
+                        className="inline-flex items-center text-cyan-500/80 font-semibold mb-12 group transition-all duration-300 hover:text-cyan-400"
                     >
-                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
-                        </svg>
-                        Back to Blog
+                        <span className="flex items-center justify-center w-8 h-8 rounded-full border border-cyan-500/20 mr-3 group-hover:border-cyan-500/40 transition-colors">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </span>
+                        Back to Insights
                     </Link>
 
-                    <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+                    <h1 className="text-5xl md:text-7xl font-black text-cyan-400 mb-10 leading-[1.05] tracking-tighter">
                         {post.title}
                     </h1>
 
-                    <div className="flex items-center text-slate-500 text-sm mb-8 border-b border-slate-100 pb-8">
-                        <span className="font-medium text-slate-900">{post.author}</span>
-                        <span className="mx-3">•</span>
-                        <span>{new Date(post.date).toLocaleDateString('en-AU', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric'
-                        })}</span>
-                    </div>
-
-                    {post.featuredImage && (
-                        <div className="rounded-2xl overflow-hidden shadow-lg mb-12">
-                            <img
-                                src={post.featuredImage}
-                                alt={post.title}
-                                className="w-full h-auto object-cover max-h-[500px]"
-                            />
+                    <div className="flex items-center space-x-6 pb-12 border-b border-white/5">
+                        <div className="flex flex-col">
+                            <div className="text-white font-bold text-lg mb-1 tracking-tight">{post.author}</div>
+                            <div className="flex items-center text-slate-500 text-sm uppercase tracking-widest font-medium">
+                                <span>{new Date(post.date).toLocaleDateString('en-AU', {
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: 'numeric'
+                                })}</span>
+                                <span className="mx-3 opacity-30">•</span>
+                                <span className="text-cyan-500/60">Editorial</span>
+                            </div>
                         </div>
-                    )}
+                    </div>
                 </header>
 
-                {/* Content */}
+                {/* Article Body Content */}
                 <div
-                    className="prose prose-lg prose-slate max-w-none mb-16 
-            prose-headings:text-slate-900 prose-headings:font-bold
-            prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6
-            prose-p:text-slate-700 prose-p:leading-relaxed prose-p:mb-6
-            prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
-            prose-strong:text-slate-900 prose-ul:list-disc prose-li:text-slate-700"
+                    className="prose prose-invert prose-lg max-w-none mb-24 
+                        prose-headings:text-slate-100 prose-headings:font-black prose-headings:tracking-tight
+                        prose-p:text-slate-300 prose-p:leading-8 prose-p:mb-10 prose-p:text-[1.2rem]
+                        prose-ul:my-10 prose-ul:list-none prose-li:text-slate-300 prose-li:text-[1.125rem] prose-li:my-4 prose-li:relative prose-li:pl-8
+                        prose-a:text-cyan-400 prose-a:font-bold prose-a:no-underline hover:prose-a:text-cyan-300 transition-colors
+                        prose-strong:text-white prose-strong:font-bold
+                        prose-img:rounded-2xl prose-img:border prose-img:border-white/10 prose-img:shadow-2xl prose-img:my-16"
                     dangerouslySetInnerHTML={{ __html: post.content }}
                 />
 
-                {/* Call to Action Section */}
-                <section className="bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-100 text-center mb-16">
-                    <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
-                        Looking for Premium Aluminium Solutions?
-                    </h2>
-                    <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-                        Contact us for professional aluminium windows and doors solutions tailored for your architectural project.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link
-                            to="/contact"
-                            className="px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200"
-                        >
-                            Contact Us Now
-                        </Link>
-                        <Link
-                            to="/products"
-                            className="px-8 py-3 bg-white text-slate-900 border border-slate-200 font-bold rounded-lg hover:bg-slate-50 transition-colors"
-                        >
-                            Browse Products
-                        </Link>
+                {/* Premium Dark CTA Section */}
+                <section className="bg-slate-900/40 backdrop-blur-md rounded-[2.5rem] p-10 md:p-16 border border-white/5 relative overflow-hidden shadow-2xl mb-24">
+                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
+
+                    <div className="relative z-10 text-center">
+                        <h2 className="text-3xl md:text-5xl font-black text-white mb-8 leading-tight tracking-tight">
+                            Ready to Elevate Your <br />
+                            <span className="text-cyan-400">Architectural Standards?</span>
+                        </h2>
+                        <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                            Join the elite architects and developers choosing Superbuild's premium aluminium systems for endurance, efficiency, and timeless aesthetic.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                            <Link
+                                to="/contact"
+                                className="px-12 py-5 bg-cyan-500 text-slate-950 font-black rounded-2xl hover:bg-cyan-400 transition-all duration-300 shadow-xl shadow-cyan-500/20 text-center active:scale-95"
+                            >
+                                Get Priority Quote
+                            </Link>
+                            <Link
+                                to="/products"
+                                className="px-12 py-5 bg-white/5 text-white border border-white/10 font-black rounded-2xl hover:bg-white/10 transition-all duration-300 text-center active:scale-95"
+                            >
+                                Browse Collections
+                            </Link>
+                        </div>
                     </div>
                 </section>
 
                 {/* Footer Navigation */}
-                <footer className="border-t border-slate-100 pt-8 flex justify-between items-center">
-                    <div className="text-slate-500 text-sm">
-                        Share this article:
-                        <div className="flex gap-4 mt-2">
-                            {/* Simple placeholder social links */}
-                            <button className="text-slate-400 hover:text-blue-600"><span className="sr-only">Facebook</span>FB</button>
-                            <button className="text-slate-400 hover:text-blue-400"><span className="sr-only">Twitter</span>TW</button>
-                            <button className="text-slate-400 hover:text-blue-700"><span className="sr-only">LinkedIn</span>LI</button>
+                <footer className="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-8">
+                    <div className="flex items-center gap-10">
+                        <span className="text-slate-500 text-sm font-bold uppercase tracking-widest">Share Article</span>
+                        <div className="flex gap-4">
+                            {['LinkedIn', 'Twitter', 'Facebook'].map((platform) => (
+                                <button key={platform} className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-slate-400 hover:text-cyan-400 hover:border-cyan-400/30 transition-all duration-300">
+                                    <span className="sr-only">{platform}</span>
+                                    {platform === 'LinkedIn' && <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>}
+                                    {platform === 'Twitter' && <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" /></svg>}
+                                    {platform === 'Facebook' && <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" /></svg>}
+                                </button>
+                            ))}
                         </div>
                     </div>
-                    <Link to="/contact" className="text-blue-600 font-bold hover:underline">
-                        Request a Quote
-                    </Link>
                 </footer>
             </article>
-        </main>
+        </BlogArticleLayout>
     );
 };
 
