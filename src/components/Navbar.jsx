@@ -37,16 +37,16 @@ const Navbar = () => {
     { path: '/products', key: 'products' },
     { path: '/about', key: 'about' },
     { path: '/certificates', key: 'certificates' },
+    { path: '/blog', key: 'blog' },
     { path: '/contact', key: 'contact' },
   ];
 
   return (
-    <nav 
-      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-slate-200' 
+    <nav
+      className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled
+          ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-slate-200'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
@@ -57,12 +57,12 @@ const Navbar = () => {
               alt="SUPERBUILD Logo"
               className="w-16 h-16 object-cover"
             />
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className={`text-2xl font-bold flex flex-col`}
               onClick={handleScrollToTop}
             >
-              <span className="text-base font-black uppercase" style={{fontFamily: '"Impact", "Arial Black", "Helvetica Neue", sans-serif', fontWeight: 800, letterSpacing: '0.08em', transform: 'skew(-3deg)', backgroundImage: 'linear-gradient(90deg, #3D1766, #6B46C1)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', textShadow: '0 0 0 transparent'}}>SUPERBUILD</span>
+              <span className="text-base font-black uppercase" style={{ fontFamily: '"Impact", "Arial Black", "Helvetica Neue", sans-serif', fontWeight: 800, letterSpacing: '0.08em', transform: 'skew(-3deg)', backgroundImage: 'linear-gradient(90deg, #3D1766, #6B46C1)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', textShadow: '0 0 0 transparent' }}>SUPERBUILD</span>
             </Link>
           </div>
 
@@ -72,21 +72,20 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-4 py-2 text-lg font-medium rounded-md transition-all duration-200 ${
-                  location.pathname === item.path
+                className={`px-4 py-2 text-lg font-medium rounded-md transition-all duration-200 ${location.pathname === item.path
                     ? isScrolled
                       ? 'text-blue-600 bg-blue-50'
                       : 'text-black bg-gray-100'
                     : isScrolled
                       ? 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                       : 'text-black hover:text-slate-900 hover:bg-gray-100'
-                }`}
+                  }`}
                 onClick={handleScrollToTop}
               >
                 {t(`nav.${item.key}`)}
               </Link>
             ))}
-            
+
             {/* <button
               onClick={toggleLanguage}
               className={`ml-4 px-3 py-2 text-lg font-medium rounded-md transition-all duration-200 ${
@@ -113,11 +112,10 @@ const Navbar = () => {
             </button> */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-md ${
-                isScrolled
+              className={`p-2 rounded-md ${isScrolled
                   ? 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
                   : 'text-black hover:bg-gray-100'
-              }`}
+                }`}
             >
               <span className="sr-only">Open main menu</span>
               {!isOpen ? (
@@ -135,20 +133,18 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className={`md:hidden absolute top-full left-0 right-0 transition-all duration-300 ${
-        isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
-      }`}>
+      <div className={`md:hidden absolute top-full left-0 right-0 transition-all duration-300 ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
+        }`}>
         <div className="bg-white shadow-xl border-t border-slate-200">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`block px-3 py-2 text-lg font-medium rounded-md transition-colors ${
-                  location.pathname === item.path
+                className={`block px-3 py-2 text-lg font-medium rounded-md transition-colors ${location.pathname === item.path
                     ? 'text-blue-600 bg-blue-50'
                     : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
-                }`}
+                  }`}
                 onClick={() => {
                   setIsOpen(false);
                   handleScrollToTop();

@@ -12,6 +12,8 @@ import AboutPage from './pages/AboutPage';
 import CertificatesPage from './pages/CertificatesPage';
 import ContactPage from './pages/ContactPage';
 import ProductDetailPage from './pages/ProductDetailPage';
+import BlogListPage from './pages/BlogListPage';
+import BlogPostPage from './pages/BlogPostPage';
 import AnimatedPage from './components/AnimatedPage';
 
 const AnimatedRoutes = () => {
@@ -58,6 +60,16 @@ const AnimatedRoutes = () => {
         <Route path="/product/:productId" element={
           <AnimatedPage>
             <ProductDetailPage />
+          </AnimatedPage>
+        } />
+        <Route path="/blog" element={
+          <AnimatedPage>
+            <BlogListPage />
+          </AnimatedPage>
+        } />
+        <Route path="/blog/:slug" element={
+          <AnimatedPage>
+            <BlogPostPage />
           </AnimatedPage>
         } />
       </Routes>

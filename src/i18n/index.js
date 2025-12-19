@@ -9,6 +9,7 @@ const resources = {
         products: 'Products',
         about: 'About Us',
         certificates: 'Certificates',
+        blog: 'Blog',
         contact: 'Contact Us',
       },
       hero: {
@@ -55,6 +56,7 @@ const resources = {
         products: '产品',
         about: '关于我们',
         certificates: '证书认证',
+        blog: '博客',
         contact: '联系我们',
       },
       hero: {
