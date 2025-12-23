@@ -193,5 +193,213 @@ export const blogPosts = [
     `,
     metaTitle: 'Aluminium Windows for Australian Summer | Superbuild Blog',
     metaDescription: 'Discover why aluminium windows are the ideal choice for Australian Christmas in summer. Learn about durability, energy efficiency, and modern design for coastal climates.'
+  },
+  {
+    id: 3,
+    slug: 'aluminium-windows-doors-australian-homes-guide-2025',
+    title: 'Aluminium Windows and Doors for Australian Homes: A Complete Guide (2025 Edition)',
+    excerpt: 'Explore the definitive guide on aluminium windows and doors for the Australian market in 2025, covering NCC compliance, thermal performance, and design trends.',
+    date: '2025-12-22',
+    featuredImage: '/blogs/6.png',
+    author: 'Superbuild Expert',
+    content: `
+      <section class="mb-16">
+        <p class="text-xl md:text-2xl text-slate-600 italic mb-12 leading-relaxed border-l-4 border-cyan-500/50 pl-8">
+          Choosing the right windows and doors is a critical decision for residential homes and building projects in Australia. The country's unique climate conditions place high demands on window and door systems.
+        </p>
+        <p>Choosing the right windows and doors is a critical decision for residential homes and building projects in Australia. The country's unique climate conditions—including <span class="blog-highlight">intense UV exposure, significant temperature variations, and coastal salt air</span>—combined with strict building regulations such as the National Construction Code (NCC) and AS 2047, place high demands on window and door systems.</p>
+
+        <p>As a result, aluminium windows and doors have become one of the most widely specified solutions for Australian homes. In line with 2025 market trends, modern aluminium systems incorporating <span class="blog-highlight">thermal break technology and double or triple glazing</span> are increasingly selected to meet higher energy efficiency targets, including NatHERS ratings of 7 stars and above.</p>
+
+        <figure class="my-14 overflow-hidden rounded-2xl border border-slate-200 shadow-2xl shadow-cyan-500/10">
+          <img src="/blogs/6.png" alt="Modern Australian residential architecture featuring premium aluminium window systems" class="w-full h-auto" />
+          <figcaption class="text-center text-sm text-slate-500 mt-6 italic">Modern Australian residential architecture featuring premium aluminium window systems integrated into contemporary design.</figcaption>
+        </figure>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-8 tracking-tight">Why Aluminium Windows Are So Popular in Australia</h2>
+        <p>Australia's demanding climate highlights the advantages of aluminium as a window and door material.</p>
+        <p>Key reasons include:</p>
+        <ul class="space-y-4 my-8 list-none pr-6">
+          <li class="flex items-start">
+            <span class="text-cyan-600 mr-3">•</span>
+            <div><strong class="text-slate-900">High UV resistance:</strong> Powder-coated aluminium frames resist fading and surface degradation under prolonged sun exposure.</div>
+          </li>
+          <li class="flex items-start">
+            <span class="text-cyan-600 mr-3">•</span>
+            <div><strong class="text-slate-900">Stability under temperature changes:</strong> Unlike timber, aluminium does not expand, contract, or warp significantly with temperature fluctuations.</div>
+          </li>
+          <li class="flex items-start">
+            <span class="text-cyan-600 mr-3">•</span>
+            <div><strong class="text-slate-900">Excellent performance in coastal areas:</strong> With appropriate anodised or powder-coated finishes, aluminium systems are well suited for coastal environments such as Sydney, Brisbane, and Perth.</div>
+          </li>
+          <li class="flex items-start">
+            <span class="text-cyan-600 mr-3">•</span>
+            <div><strong class="text-slate-900">Suitability for bushfire-prone regions:</strong> Many aluminium window and door systems can be configured to achieve BAL-29 or higher, making them appropriate for bushfire-prone areas.</div>
+          </li>
+          <li class="flex items-start">
+            <span class="text-cyan-600 mr-3">•</span>
+            <div><strong class="text-slate-900">Low maintenance requirements:</strong> Aluminium requires only occasional cleaning, with no need for repainting or sealing.</div>
+          </li>
+        </ul>
+
+        <figure class="my-14 overflow-hidden rounded-2xl border border-slate-200 shadow-2xl shadow-cyan-500/10">
+          <img src="/blogs/7.png" alt="High-performance aluminium awning windows designed for Australian UV and coastal conditions" class="w-full h-auto" />
+          <figcaption class="text-center text-sm text-slate-500 mt-6 italic">Engineering resilience: High-performance aluminium awning windows designed for extreme Australian UV and coastal conditions.</figcaption>
+        </figure>
+
+        <p>Overall, aluminium provides an <span class="blog-highlight">optimal balance of strength, durability, design flexibility, and sustainability</span>, with a typical service life of 30–50 years or more and full recyclability.</p>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-8 tracking-tight">Common Types of Aluminium Windows and Doors Used in Australia</h2>
+        <p>Australian residential projects commonly use the following aluminium systems, all of which can be customised in size, colour, and configuration:</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
+          <div>
+            <h3 class="text-2xl font-bold text-slate-800 mb-4">Fixed Windows</h3>
+            <p>Designed to maximise natural light and views. Fixed windows offer excellent energy efficiency and are ideal for non-operable areas.</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-slate-800 mb-4">Awning Windows</h3>
+            <p>Hinged at the top and opening outward, awning windows allow ventilation while providing protection from rain. Commonly used in kitchens and bathrooms.</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-slate-800 mb-4">Sliding Windows</h3>
+            <p>Space-efficient horizontal operation, well suited to modern residential designs.</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-slate-800 mb-4">Sliding Doors</h3>
+            <p>Popular for creating seamless connections between indoor and outdoor spaces, particularly in living and entertaining areas.</p>
+          </div>
+        </div>
+
+        <h3 class="text-2xl font-bold text-slate-800 mb-4">Bi-Folding Doors</h3>
+        <p>Folding door systems create wide openings and are ideal for patios and outdoor entertaining areas.</p>
+
+        <figure class="my-14 overflow-hidden rounded-2xl border border-slate-200 shadow-2xl shadow-cyan-500/10">
+          <img src="/blogs/8.png" alt="Architectural aluminium bi-folding doors creating a seamless indoor-outdoor living space" class="w-full h-auto" />
+          <figcaption class="text-center text-sm text-slate-500 mt-6 italic">Architecture in motion: Aluminium bi-folding doors creating a seamless transition to outdoor living areas.</figcaption>
+        </figure>
+
+        <p>This makes aluminium windows and doors ideal for modern Australian homes, especially those with patios, balconies, or garden access — perfect for summer entertaining.</p>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-8 tracking-tight">Performance and Energy Efficiency: Key Considerations in 2025</h2>
+        <p>Energy efficiency has become a central consideration in Australian residential construction, and aluminium systems have evolved significantly to meet these expectations.</p>
+
+        <h3 class="text-2xl font-bold text-slate-800 mt-10 mb-6">Thermal Break Technology</h3>
+        <p>Thermal break aluminium profiles incorporate polyamide insulation strips within the frame to reduce heat transfer. While standard aluminium is highly conductive, <span class="blog-highlight">thermal break systems can reduce U-values by more than 40%</span>, significantly improving thermal performance.</p>
+
+        <h3 class="text-2xl font-bold text-slate-800 mt-10 mb-6">Double and Triple Glazing</h3>
+        <p>Double or triple glazing, often combined with low-E coatings and argon gas fill, reduces heat gain in summer and heat loss in winter. When paired with thermal break frames, these systems can achieve high WERS (Window Energy Rating Scheme) ratings.</p>
+
+        <figure class="my-14 overflow-hidden rounded-2xl border border-slate-200 shadow-2xl shadow-cyan-500/10">
+          <img src="/blogs/9.png" alt="Precision-engineered aluminium fixed window system with thermal break technology" class="w-full h-auto" />
+          <figcaption class="text-center text-sm text-slate-500 mt-6 italic">Efficiency optimized: Precision-engineered fixed window system featuring integrated thermal break technology.</figcaption>
+        </figure>
+
+        <h3 class="text-2xl font-bold text-slate-800 mt-10 mb-6">Compliance with Australian Standards</h3>
+        <p>All aluminium windows and doors used in Australia must comply with:</p>
+        <ul class="space-y-4 my-8 list-none pr-6">
+          <li class="flex items-start"><span class="text-cyan-600 mr-3">•</span> <strong class="text-slate-900">AS 2047</strong> – Structural performance, water penetration, and air infiltration</li>
+          <li class="flex items-start"><span class="text-cyan-600 mr-3">•</span> <strong class="text-slate-900">AS 1288</strong> – Glass selection and safety requirements</li>
+        </ul>
+        <p>The 2025 NCC places greater emphasis on energy efficiency, making thermal break aluminium systems a standard choice in both coastal and inland regions.</p>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-8 tracking-tight">Material Comparison: Aluminium vs uPVC vs Timber (Australian Market)</h2>
+        <div class="overflow-x-auto my-10">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-slate-50 border-b border-slate-200">
+                <th class="p-4 font-bold text-slate-900">Feature</th>
+                <th class="p-4 font-bold text-slate-900">Aluminium (Thermal Break)</th>
+                <th class="p-4 font-bold text-slate-900">uPVC</th>
+                <th class="p-4 font-bold text-slate-900">Timber</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              <tr>
+                <td class="p-4 text-slate-700 font-medium">Durability</td>
+                <td class="p-4 text-slate-600">Very high (UV & corrosion resistant)</td>
+                <td class="p-4 text-slate-600">High</td>
+                <td class="p-4 text-slate-600">Moderate (prone to rot)</td>
+              </tr>
+              <tr>
+                <td class="p-4 text-slate-700 font-medium">Energy Efficiency</td>
+                <td class="p-4 text-slate-600">High (with double glazing)</td>
+                <td class="p-4 text-slate-600">Very high</td>
+                <td class="p-4 text-slate-600">High (with maintenance)</td>
+              </tr>
+              <tr>
+                <td class="p-4 text-slate-700 font-medium">Maintenance</td>
+                <td class="p-4 text-slate-600">Very low</td>
+                <td class="p-4 text-slate-600">Low</td>
+                <td class="p-4 text-slate-600">High (painting/sealing)</td>
+              </tr>
+              <tr>
+                <td class="p-4 text-slate-700 font-medium">Structural Strength</td>
+                <td class="p-4 text-slate-600">Very high (supports large spans)</td>
+                <td class="p-4 text-slate-600">Moderate</td>
+                <td class="p-4 text-slate-600">Moderate</td>
+              </tr>
+              <tr>
+                <td class="p-4 text-slate-700 font-medium">Design Flexibility</td>
+                <td class="p-4 text-slate-600">High (wide colour range, slim frames)</td>
+                <td class="p-4 text-slate-600">Moderate</td>
+                <td class="p-4 text-slate-600">High (natural appearance)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>For Australian climate conditions, <span class="blog-highlight">aluminium systems offer the best long-term value</span> and performance balance.</p>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-8 tracking-tight">Maintenance and Long-Term Value</h2>
+        <p>Aluminium windows and doors require minimal maintenance. Recommended care includes:</p>
+        <ul class="space-y-4 my-8 list-none pr-6">
+          <li class="flex items-start"><span class="text-cyan-600 mr-3">•</span> Cleaning frames with mild soap and water</li>
+          <li class="flex items-start"><span class="text-cyan-600 mr-3">•</span> Periodic inspection of seals and hardware</li>
+          <li class="flex items-start"><span class="text-cyan-600 mr-3">•</span> Lubrication of sliding tracks where applicable</li>
+        </ul>
+        <p>Current trends for 2025 include <span class="blog-highlight">slimmer frame profiles, automation-ready systems, and earth-toned powder-coated finishes</span>, aligning performance with modern architectural preferences.</p>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-8 tracking-tight">Frequently Asked Questions</h2>
+        <div class="space-y-8">
+          <div>
+            <h4 class="text-xl font-bold text-slate-800 mb-2">Are aluminium windows suitable for coastal areas in Australia?</h4>
+            <p>Yes. With appropriate surface treatments, aluminium windows perform reliably in coastal environments.</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold text-slate-800 mb-2">Is thermal break aluminium worth the additional cost?</h4>
+            <p>Yes. In regions with extreme temperatures, thermal break systems can reduce energy bills by approximately 20–30% over time.</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-bold text-slate-800 mb-2">How can I ensure compliance with Australian standards?</h4>
+            <p>Work with suppliers who provide AS 2047-compliant systems and documented WERS ratings.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-16 border-t border-slate-200 pt-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-8 tracking-tight">Discuss Your Aluminium Window and Door Project</h2>
+        <p>If you are planning a residential or building project in Australia, aluminium windows and doors offer a durable, energy-efficient, and future-ready solution.</p>
+        <p>👉 Contact Superbuild today to discuss aluminium window and door systems tailored to your project requirements. We provide custom design support, compliance documentation, and export experience for Australian projects.</p>
+        <p>You may also explore our:</p>
+        <ul class="space-y-4 my-8 list-none pr-6">
+          <li class="flex items-start"><span class="text-cyan-600 mr-3">•</span> <a href="/products" class="text-cyan-600 hover:text-cyan-700 underline underline-offset-4">Products</a> to view available window and door systems</li>
+          <li class="flex items-start"><span class="text-cyan-600 mr-3">•</span> <a href="/certificates" class="text-cyan-600 hover:text-cyan-700 underline underline-offset-4">Certificates</a> to learn more about our quality and compliance standards</li>
+        </ul>
+      </section>
+    `,
+    metaTitle: 'Aluminium Windows & Doors Guide 2025 | Superbuild Australia',
+    metaDescription: 'Complete 2025 guide to aluminium windows and doors for Australian homes. Learn about NCC compliance, thermal break technology, and weather resistance.'
   }
 ];
