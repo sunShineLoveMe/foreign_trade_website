@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const ContactSection = ({ 
-  title = "Get In Touch", 
+const ContactSection = ({
+  title = "Get In Touch",
   subtitle = "Ready to discuss your project? Our experts are here to help.",
   contactInfo = {
     address: "56 cowpwer street , Sydney, NSW 2032, Australia",
@@ -48,7 +48,7 @@ const ContactSection = ({
 
   const validateForm = () => {
     const newErrors = {};
-    
+
     if (!formData.name.trim()) newErrors.name = 'Name is required';
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
@@ -58,32 +58,44 @@ const ContactSection = ({
     if (!formData.phone.trim()) newErrors.phone = 'Phone is required';
     if (!formData.productType) newErrors.productType = 'Please select a product type';
     if (!formData.message.trim()) newErrors.message = 'Message is required';
-    
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (!validateForm()) return;
-    
+
     setIsSubmitting(true);
-    
-    // Simulate API call
+
     try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      alert('Thank you for your inquiry! We\'ll get back to you within 24 hours.');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        productType: '',
-        message: ''
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert('Thank you for your inquiry! We\'ll get back to you within 24 hours.');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          productType: '',
+          message: ''
+        });
+      } else {
+        throw new Error(result.error || 'Failed to send message');
+      }
     } catch (error) {
-      alert('Something went wrong. Please try again.');
+      alert(`Error: ${error.message}. Please try again later.`);
     } finally {
       setIsSubmitting(false);
     }
@@ -102,7 +114,7 @@ const ContactSection = ({
           <div className="lg:col-span-5">
             <div className="bg-white rounded-xl shadow-lg p-8 h-full">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
-              
+
               <div className="space-y-6">
                 {/* Address */}
                 <div className="flex items-start">
@@ -176,7 +188,7 @@ const ContactSection = ({
           <div className="lg:col-span-7">
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Name */}
@@ -190,9 +202,8 @@ const ContactSection = ({
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
-                        errors.name ? 'border-red-300' : 'border-gray-300'
-                      }`}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.name ? 'border-red-300' : 'border-gray-300'
+                        }`}
                       placeholder="Your full name"
                     />
                     {errors.name && (
@@ -211,9 +222,8 @@ const ContactSection = ({
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
-                        errors.email ? 'border-red-300' : 'border-gray-300'
-                      }`}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.email ? 'border-red-300' : 'border-gray-300'
+                        }`}
                       placeholder="your.email@example.com"
                     />
                     {errors.email && (
@@ -232,9 +242,8 @@ const ContactSection = ({
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
-                        errors.phone ? 'border-red-300' : 'border-gray-300'
-                      }`}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.phone ? 'border-red-300' : 'border-gray-300'
+                        }`}
                       placeholder="+61 400 123 456"
                     />
                     {errors.phone && (
@@ -269,9 +278,8 @@ const ContactSection = ({
                     name="productType"
                     value={formData.productType}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
-                      errors.productType ? 'border-red-300' : 'border-gray-300'
-                    }`}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${errors.productType ? 'border-red-300' : 'border-gray-300'
+                      }`}
                   >
                     <option value="">Select a product type</option>
                     {productTypes.map((type) => (
@@ -294,9 +302,8 @@ const ContactSection = ({
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none ${
-                      errors.message ? 'border-red-300' : 'border-gray-300'
-                    }`}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none ${errors.message ? 'border-red-300' : 'border-gray-300'
+                      }`}
                     placeholder="Tell us about your project requirements..."
                   />
                   {errors.message && (
